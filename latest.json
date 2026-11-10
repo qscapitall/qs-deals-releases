@@ -1,0 +1,20 @@
+{
+ "version": "7.20.1",
+ "notes": "Do Not Call and calling hours, follow-up plans, audit log, list results, calling and texting, on-screen signing, trials and activation, automatic updates.",
+ "win": {
+  "qs": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.20.1/QS-Deals-Setup-7.20.1.exe",
+   "sha256": "a5db9a9df52090b1c1823e8757c73867c9532394c805008d4edaf65f8d354bde"
+  },
+  "clean": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.20.1/QS-Deals-Clean-Setup-7.20.1.exe",
+   "sha256": "871de4d175429d4e093242b2ecb0234691f7d1b70af48cae32ef7e161a4a987d"
+  }
+ },
+ "android": {
+  "qs": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.20.1/QS-Deals-7.20.1.apk",
+   "sha256": "37110ae95d0eaa36d47dff7aef531edce6fcb1b9e909d6918fb563662af618fc"
+  }
+ }
+}
