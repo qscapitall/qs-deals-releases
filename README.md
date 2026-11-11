@@ -9,3 +9,5 @@ Current version: **7.20.1**
 - Android: `v7.20.1/QS-Deals-7.20.1.apk`
 
 New accounts get a 7-day trial, then need activation.
+
+Always-latest downloads for customers: `download/QS-Deals-Windows.exe`, `download/QS-Deals-Android.apk`.
