@@ -1,14 +1,14 @@
 {
- "version": "7.23.0",
- "notes": "Free AI call summaries and full transcripts with your own Groq key.",
+ "version": "7.23.1",
+ "notes": "AI call summaries now use the AI models Groq currently offers (GPT-OSS 120B, with backups).",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.23.0/QS-Deals-Setup-7.23.0.exe",
-   "sha256": "682f38d5fd2be10af9f660331115e107eabce28343390920ca0eb54df9af4f40"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.23.1/QS-Deals-Setup-7.23.1.exe",
+   "sha256": "ee07ec9b3471ecdad72450f7070f129ac9d66c5889145fa0e9784358e3dca752"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.23.0/QS-Deals-Clean-Setup-7.23.0.exe",
-   "sha256": "fe4c54722842776a9502193438dc1537967be80b01154bcad19eed806f2e2c1a"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.23.1/QS-Deals-Clean-Setup-7.23.1.exe",
+   "sha256": "426370b8afbacc7222158a3083c4122693eec3ab63de79a60c7aa38cd7db6cc1"
   }
  }
 }
