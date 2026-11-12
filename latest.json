@@ -1,14 +1,14 @@
 {
- "version": "7.21.0",
- "notes": "Call and text through your own Twilio number, real email check and phone number at sign-up, messages from QS Deals.",
+ "version": "7.21.1",
+ "notes": "Call recording on the PC: owners and admins listen to every call. Your own Twilio number, real email check and phone number at sign-up.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.0/QS-Deals-Setup-7.21.0.exe",
-   "sha256": "d21bdcdcdf56b099b704be63735acf4cc73ab97e1e3b44426745d8aa65d84131"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.1/QS-Deals-Setup-7.21.1.exe",
+   "sha256": "0256508766017d5d2d9378cbb0ecc9522056bcec8bc29225badc37ea71cebb94"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.0/QS-Deals-Clean-Setup-7.21.0.exe",
-   "sha256": "14af5c1abc0fbd3e153daa5621ee7a64c791872ff8c9997a0e7db05524cbb53a"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.1/QS-Deals-Clean-Setup-7.21.1.exe",
+   "sha256": "995a2eecbd256ae90ed8b8057c7364532eb73cda759ee186bd05f92543f5cd1e"
   }
  }
 }
