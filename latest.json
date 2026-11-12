@@ -1,14 +1,14 @@
 {
- "version": "7.21.3",
- "notes": "Call recording: every recording on this PC shows in the list, with Upload now and the reason if it did not upload.",
+ "version": "7.22.0",
+ "notes": "AI call summaries, call scoring for coaching, 1.5x/2x playback with skip silence, storage meter. Tagging a number stops the recording; deleting asks first and removes it everywhere.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.3/QS-Deals-Setup-7.21.3.exe",
-   "sha256": "3f72f071cc75fd62f809d450d2d61bf3c04bd06f7a1270a9b934eac704598dac"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.22.0/QS-Deals-Setup-7.22.0.exe",
+   "sha256": "57ef5c880e240a98f8030e20f834fa63141285c10b99571ee2ff44ab2905c7ab"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.3/QS-Deals-Clean-Setup-7.21.3.exe",
-   "sha256": "19ab6bc0558e8deca55bc14c1bbcba5a0c5a5c88293c4ad099c31d3db3d22470"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.22.0/QS-Deals-Clean-Setup-7.22.0.exe",
+   "sha256": "f07f7a9e5c690a33f7047f1d2d2666ffb81dfdbec40f8ec496e31d28e86db4a4"
   }
  }
 }
