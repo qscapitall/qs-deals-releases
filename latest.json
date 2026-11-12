@@ -1,24 +1,14 @@
 {
- "version": "7.20.1",
- "notes": "Do Not Call and calling hours, follow-up plans, audit log, list results, calling and texting, on-screen signing, trials and activation, automatic updates.",
+ "version": "7.21.0",
+ "notes": "Call and text through your own Twilio number, real email check and phone number at sign-up, messages from QS Deals.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.20.1/QS-Deals-Setup-7.20.1.exe",
-   "sha256": "a5db9a9df52090b1c1823e8757c73867c9532394c805008d4edaf65f8d354bde"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.0/QS-Deals-Setup-7.21.0.exe",
+   "sha256": "d21bdcdcdf56b099b704be63735acf4cc73ab97e1e3b44426745d8aa65d84131"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.20.1/QS-Deals-Clean-Setup-7.20.1.exe",
-   "sha256": "871de4d175429d4e093242b2ecb0234691f7d1b70af48cae32ef7e161a4a987d"
-  }
- },
- "android": {
-  "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.20.1/QS-Deals-7.20.1.apk",
-   "sha256": "37110ae95d0eaa36d47dff7aef531edce6fcb1b9e909d6918fb563662af618fc"
-  },
-  "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.20.1/QS-Deals-Clean-7.20.1.apk",
-   "sha256": "c2e43ec7030d46869c88d6675ff8d18b037f71e5f2c06c54d2436ed89cbb7e9c"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.0/QS-Deals-Clean-Setup-7.21.0.exe",
+   "sha256": "14af5c1abc0fbd3e153daa5621ee7a64c791872ff8c9997a0e7db05524cbb53a"
   }
  }
 }
