@@ -1,14 +1,14 @@
 {
- "version": "7.21.2",
- "notes": "Call recording: see uploads waiting on this PC and why, with Upload now. Recording also stops when you log the outcome from the lead.",
+ "version": "7.21.3",
+ "notes": "Call recording: every recording on this PC shows in the list, with Upload now and the reason if it did not upload.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.2/QS-Deals-Setup-7.21.2.exe",
-   "sha256": "1e0515940d103843872ac65b7707a37aede6c9ec152ff5ef3e0fafcead8c8b4e"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.3/QS-Deals-Setup-7.21.3.exe",
+   "sha256": "3f72f071cc75fd62f809d450d2d61bf3c04bd06f7a1270a9b934eac704598dac"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.2/QS-Deals-Clean-Setup-7.21.2.exe",
-   "sha256": "1fd91cedfeb002c58d162103c28f0a20b8dacecd48a39817602743275f9babd6"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.3/QS-Deals-Clean-Setup-7.21.3.exe",
+   "sha256": "19ab6bc0558e8deca55bc14c1bbcba5a0c5a5c88293c4ad099c31d3db3d22470"
   }
  }
 }
