@@ -1,14 +1,14 @@
 {
- "version": "7.21.1",
- "notes": "Call recording on the PC: owners and admins listen to every call. Your own Twilio number, real email check and phone number at sign-up.",
+ "version": "7.21.2",
+ "notes": "Call recording: see uploads waiting on this PC and why, with Upload now. Recording also stops when you log the outcome from the lead.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.1/QS-Deals-Setup-7.21.1.exe",
-   "sha256": "0256508766017d5d2d9378cbb0ecc9522056bcec8bc29225badc37ea71cebb94"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.2/QS-Deals-Setup-7.21.2.exe",
+   "sha256": "1e0515940d103843872ac65b7707a37aede6c9ec152ff5ef3e0fafcead8c8b4e"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.1/QS-Deals-Clean-Setup-7.21.1.exe",
-   "sha256": "995a2eecbd256ae90ed8b8057c7364532eb73cda759ee186bd05f92543f5cd1e"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.21.2/QS-Deals-Clean-Setup-7.21.2.exe",
+   "sha256": "1fd91cedfeb002c58d162103c28f0a20b8dacecd48a39817602743275f9babd6"
   }
  }
 }
