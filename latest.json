@@ -1,14 +1,14 @@
 {
- "version": "7.24.0",
- "notes": "AI sets the callback the owner asked for, tags leads hot/warm/cold (hot first), and scores every call with a coaching tip. Admins: Needs review filter.",
+ "version": "7.25.0",
+ "notes": "New BRRRR calculator in Analyze. AI sets callbacks, tags hot leads and scores calls.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.24.0/QS-Deals-Setup-7.24.0.exe",
-   "sha256": "76ea7ad0aa4ffe2fc1f9026ac20fb4ab8df0eaa6e9f98c1a992094fd91276e3d"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.0/QS-Deals-Setup-7.25.0.exe",
+   "sha256": "edee18dd01e6d2e764d1bf7c9d7412985b096d03f34dc5777b3ab7ad748718f5"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.24.0/QS-Deals-Clean-Setup-7.24.0.exe",
-   "sha256": "effe78f3105b9c243b9cef381ccd9ad77b440bd8262dbd9d3fbfd6ccdb515744"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.0/QS-Deals-Clean-Setup-7.25.0.exe",
+   "sha256": "7014a463f4cbdf4337290ff80fbc78459cf8636776bce26291bd7ceb0f1a439b"
   }
  }
 }
