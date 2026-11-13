@@ -1,14 +1,14 @@
 {
- "version": "7.25.0",
- "notes": "New BRRRR calculator in Analyze. AI sets callbacks, tags hot leads and scores calls.",
+ "version": "7.25.1",
+ "notes": "New BRRRR calculator: Analyze, BRRRR (also in the side menu). AI sets callbacks, tags hot leads and scores calls.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.0/QS-Deals-Setup-7.25.0.exe",
-   "sha256": "edee18dd01e6d2e764d1bf7c9d7412985b096d03f34dc5777b3ab7ad748718f5"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.1/QS-Deals-Setup-7.25.1.exe",
+   "sha256": "aca3066133464829f927beef648a314ccb3320355eeb68843576fc1279ed30e7"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.0/QS-Deals-Clean-Setup-7.25.0.exe",
-   "sha256": "7014a463f4cbdf4337290ff80fbc78459cf8636776bce26291bd7ceb0f1a439b"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.1/QS-Deals-Clean-Setup-7.25.1.exe",
+   "sha256": "33ff6048a296535fe727f9f7fefaddc3268a296d89b393fd3534be16bd8e22ab"
   }
  }
 }
