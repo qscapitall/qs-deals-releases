@@ -1,14 +1,14 @@
 {
- "version": "7.23.1",
- "notes": "AI call summaries now use the AI models Groq currently offers (GPT-OSS 120B, with backups).",
+ "version": "7.24.0",
+ "notes": "AI sets the callback the owner asked for, tags leads hot/warm/cold (hot first), and scores every call with a coaching tip. Admins: Needs review filter.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.23.1/QS-Deals-Setup-7.23.1.exe",
-   "sha256": "ee07ec9b3471ecdad72450f7070f129ac9d66c5889145fa0e9784358e3dca752"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.24.0/QS-Deals-Setup-7.24.0.exe",
+   "sha256": "76ea7ad0aa4ffe2fc1f9026ac20fb4ab8df0eaa6e9f98c1a992094fd91276e3d"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.23.1/QS-Deals-Clean-Setup-7.23.1.exe",
-   "sha256": "426370b8afbacc7222158a3083c4122693eec3ab63de79a60c7aa38cd7db6cc1"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.24.0/QS-Deals-Clean-Setup-7.24.0.exe",
+   "sha256": "effe78f3105b9c243b9cef381ccd9ad77b440bd8262dbd9d3fbfd6ccdb515744"
   }
  }
 }
