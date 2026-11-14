@@ -1,0 +1,14 @@
+{
+ "version": "7.27.0",
+ "notes": "AI call helper: professional realtor mode, train it with your own objections, use your own free Groq key. Billing in Settings.",
+ "win": {
+  "qs": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.27.0/QS-Deals-Setup-7.27.0.exe",
+   "sha256": "daf3934c88446278fa911e821bceffa45fb6bb8e0594b42a6551a9d5d111c439"
+  },
+  "clean": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.27.0/QS-Deals-Clean-Setup-7.27.0.exe",
+   "sha256": "a4205c26e4b07015a8671bf7e08fc118fd315caec6aa011f9f188a9200e3e625"
+  }
+ }
+}
