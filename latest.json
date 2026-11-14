@@ -1,14 +1,14 @@
 {
- "version": "7.25.1",
- "notes": "New BRRRR calculator: Analyze, BRRRR (also in the side menu). AI sets callbacks, tags hot leads and scores calls.",
+ "version": "7.26.0",
+ "notes": "New AI call helper: tells you what to say during the call (owners and realtors, seller finance). Small recording sign next to the number.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.1/QS-Deals-Setup-7.25.1.exe",
-   "sha256": "aca3066133464829f927beef648a314ccb3320355eeb68843576fc1279ed30e7"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.26.0/QS-Deals-Setup-7.26.0.exe",
+   "sha256": "30c669796b2653930cf55df8269de555c4e26762ed92727b46ed5dc256298600"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.25.1/QS-Deals-Clean-Setup-7.25.1.exe",
-   "sha256": "33ff6048a296535fe727f9f7fefaddc3268a296d89b393fd3534be16bd8e22ab"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.26.0/QS-Deals-Clean-Setup-7.26.0.exe",
+   "sha256": "4818708a73dd1f13fef98bf025c7f8fef73fc0053c1892a35ecbca566186f602"
   }
  }
 }
