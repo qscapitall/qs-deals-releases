@@ -1,5 +1,5 @@
 /* QS Deal Calculator: works offline. Bump VER to push an update. */
-const VER = 'qs-calc-1.1.0', FILES = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-180.png', 'icons/maskable-512.png'];
+const VER = 'qs-calc-1.1.1', FILES = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-180.png', 'icons/maskable-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VER).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== VER).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 /* network first for the page (so updates show), cache for everything else */

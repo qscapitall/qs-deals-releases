@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="QS Calc">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-180.png">
@@ -46,11 +46,11 @@ button{font:inherit;color:inherit}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}
 
 /* nav bar */
-.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px))) 0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:0 calc(-1 * max(16px,env(safe-area-inset-right,0px))) 0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));
   padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));height:48px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
   background:transparent;border-bottom:.5px solid transparent;transition:background .25s,border-color .25s}
 .nav.solid{background:var(--bar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom-color:var(--sep)}
-.nav .mid{font-size:17px;font-weight:600;opacity:0;transform:translateY(6px);transition:opacity .25s,transform .35s var(--ease);display:flex;align-items:center;gap:8px;white-space:nowrap}
+.nav .mid{min-width:0;max-width:62vw;font-size:17px;font-weight:600;opacity:0;transform:translateY(6px);transition:opacity .25s,transform .35s var(--ease);display:flex;align-items:center;gap:8px;white-space:nowrap}
 .nav.solid .mid{opacity:1;transform:none}
 .nav .mid .tag{font-size:13px;font-weight:600;padding:3px 8px;border-radius:999px;font-variant-numeric:tabular-nums;transition:background .3s,color .3s}
 .nav .right{justify-self:end;display:flex;gap:6px}
@@ -83,13 +83,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .row+.row::before{content:"";position:absolute;top:0;left:16px;right:0;height:.5px;background:var(--sep)}
 .row .rl{flex:1 1 auto;min-width:0;display:flex;flex-direction:column}
 .row .rl small{font-size:12.5px;color:var(--label2);margin-top:1px}
-.row .rv{display:flex;align-items:center;justify-content:flex-end;gap:2px;flex:0 1 52%;min-width:0;color:var(--label2);font-variant-numeric:tabular-nums}
+.row .rv{display:flex;align-items:center;justify-content:flex-end;gap:2px;flex:0 0 auto;max-width:55%;min-width:0;color:var(--label2);font-variant-numeric:tabular-nums}
 label.row{cursor:text}
 label.row:active{background:var(--fill)}
 .row input{flex:0 1 auto;width:4ch;max-width:100%;min-width:1ch;border:0;background:transparent;text-align:right;color:var(--blue);font:inherit;font-variant-numeric:tabular-nums;outline:none;padding:6px 0;caret-color:var(--blue)}
 .row input::placeholder{color:var(--label3)}
 .row .u{color:var(--label2);font-size:15px;flex:0 0 auto}
-.row.ro .rv{color:var(--label);font-weight:500;flex-basis:auto;white-space:nowrap}
+.row.ro .rv{color:var(--label);font-weight:500;max-width:none;white-space:nowrap}
 .row.ro .rl{color:var(--label2)}
 .row.tot .rl{color:var(--label);font-weight:600}
 .row.tot .rv{font-weight:700}
@@ -189,7 +189,7 @@ input:focus-visible{outline:none}
 <div class="app">
   <div class="nav" id="nav">
     <div><button class="text-btn" id="resetBtn" type="button">Reset</button></div>
-    <div class="mid"><span id="navTitle">Cash · DSCR</span><span class="tag tg-n" id="navTag">—</span></div>
+    <div class="mid"><span id="navTitle" style="overflow:hidden;text-overflow:ellipsis">Cash · DSCR</span><span class="tag tg-n" id="navTag">—</span></div>
     <div class="right"><button class="icon-btn press" id="themeBtn" type="button" aria-label="Appearance"></button></div>
   </div>
   <div class="large" id="large">
@@ -333,12 +333,12 @@ const calc = () => ({cash, flip, sf, st, hy, br})[S.tab]();
 /* ---------- icons (SF Symbols style) ---------- */
 const I = (p, w = 1.8) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
 const ICON = {
-  cash: I('<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/>'),
-  flip: I('<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/>'),
-  sf: I('<path d="M4 7h16v10H4z"/><path d="M4 10h16"/><path d="M7.5 14h3"/><path d="M17 2.5v3M7 2.5v3"/>'),
-  st: I('<circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/>'),
-  hy: I('<path d="M4 7h6l4 5-4 5H4"/><path d="M14 12h6"/><path d="m17 9 3 3-3 3"/>'),
-  br: I('<path d="M4 12a8 8 0 0 1 13.7-5.6L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15"/><path d="M4 20v-5h5"/>'),
+  cash: I('<circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.5-1-1.6-1.6-2.8-1.6-1.6 0-2.8.9-2.8 2.1 0 2.9 5.7 1.6 5.7 4.5 0 1.3-1.3 2.2-2.9 2.2-1.3 0-2.5-.6-3-1.7M12 6v1.6M12 16.4V18"/>'),
+  flip: I('<rect x="3.5" y="3.5" width="14" height="5.5" rx="1.6"/><path d="M17.5 6.2h2.5v5.3h-8.5v2.8"/><rect x="10" y="14.3" width="3" height="6.7" rx="1"/>'),
+  sf: I('<path d="M3 9.5 12 4l9 5.5"/><path d="M4.5 9.5h15"/><path d="M6.5 10v7M10 10v7M14 10v7M17.5 10v7"/><path d="M3.5 20h17"/>'),
+  st: I('<path d="M4 8h13"/><path d="m14 4.5 3.5 3.5-3.5 3.5"/><path d="M20 16H7"/><path d="M10 12.5 6.5 16l3.5 3.5"/>'),
+  hy: I('<circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/>'),
+  br: I('<path d="M8 12.5 12 9l4 3.5"/><path d="M9.3 11.5V15h5.4v-3.5"/><path d="M19.5 10A8 8 0 0 0 5.6 6.6L4 8.5"/><path d="M4 4.5v4h4"/><path d="M4.5 14a8 8 0 0 0 13.9 3.4L20 15.5"/><path d="M20 19.5v-4h-4"/>'),
   sun: I('<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>'),
   moon: I('<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>'),
   auto: I('<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/>'),
@@ -528,7 +528,11 @@ const nav = $('#nav'); new IntersectionObserver(([en]) => nav.classList.toggle('
 /* appearance: auto → light → dark */
 function applyTheme() { const r = document.documentElement; if (S.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.theme);
   const b = $('#themeBtn'); b.innerHTML = ICON[S.theme === 'auto' ? 'auto' : S.theme === 'light' ? 'sun' : 'moon']; b.setAttribute('aria-label', 'Appearance: ' + S.theme);
-  const m = document.querySelector('meta[name="theme-color"]:not([media])'); if (m) m.content = getComputedStyle(r).getPropertyValue('--bg').trim(); }
+  const dark = S.theme === 'dark' || (S.theme === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+  const m = document.querySelector('meta[name="theme-color"]:not([media])'); if (m) m.content = dark ? '#000000' : '#f2f2f7';
+  /* Android app: paint the phone's status bar and bottom bar to match */
+  try { if (window.QSApp && QSApp.theme) QSApp.theme(dark); } catch (e) {} }
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => applyTheme()); } catch (e) {}
 $('#themeBtn').addEventListener('click', () => { S.theme = {auto:'light', light:'dark', dark:'auto'}[S.theme] || 'auto'; save(); applyTheme(); });
 
 /* reset action sheet */
