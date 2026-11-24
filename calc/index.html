@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>QS Deal Calculator</title>
+<meta name="description" content="Free wholesale deal calculator: Cash/DSCR, Fix & Flip, Seller Finance, Takeover, Hybrid and BRRRR, with your assignment fee.">
+<meta name="theme-color" content="#eef2f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1422" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="QS Calc">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+</head>
+<body>
+<style>
+html{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}
+@media (prefers-color-scheme: dark){html{color-scheme:dark}}
+
+/* Layout: wide two-column desk on tablets/desktop (deal inputs left, strategy right), one calm column on phones */
+:root{
+  --bg:#eef2f7; --card:#ffffff; --fg:#14213a; --muted:#64728a; --soft:#8a96aa; --line:#e4e9f1; --field:#f5f7fb; --row:#f9fafc;
+  --accent:#2a5bd7; --accent-soft:#e8eefc; --good:#13895a; --good-soft:#e2f4eb; --warn:#a86a06; --warn-soft:#fcf0d9; --bad:#c9412f; --bad-soft:#fbe9e6;
+  --shadow:0 1px 2px rgba(20,33,58,.04),0 6px 20px rgba(20,33,58,.05);
+  --display:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',Roboto,system-ui,sans-serif; --body:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,system-ui,sans-serif;
+  --r:18px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1422; --card:#151e30; --fg:#e7edf7; --muted:#9aa7bd; --soft:#7a879d; --line:#243149; --field:#101928; --row:#131c2d;
+  --accent:#7c9eff; --accent-soft:#1d2b50; --good:#45cf8e; --good-soft:#12301f; --warn:#f0b452; --warn-soft:#352610; --bad:#ff8173; --bad-soft:#3a1b17;
+  --shadow:none; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1422; --card:#151e30; --fg:#e7edf7; --muted:#9aa7bd; --soft:#7a879d; --line:#243149; --field:#101928; --row:#131c2d;
+  --accent:#7c9eff; --accent-soft:#1d2b50; --good:#45cf8e; --good-soft:#12301f; --warn:#f0b452; --warn-soft:#352610; --bad:#ff8173; --bad-soft:#3a1b17;
+  --shadow:none; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:16px 0 10px;display:flex;flex-direction:column;gap:12px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+h1{font-family:var(--display);font-size:22px;white-space:nowrap;margin:0;letter-spacing:-.01em}
+h1 span{color:var(--accent)}
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px;box-shadow:var(--shadow)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:1 0 auto;border:0;background:transparent;color:var(--muted);font:600 14px var(--body);padding:10px 14px;border-radius:10px;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--fg)}
+.tab[aria-selected="true"]{background:var(--accent);color:#fff}
+.cols{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+.side{display:flex;flex-direction:column;gap:18px;min-width:0}
+@media (min-width:900px){.cols{grid-template-columns:minmax(360px,5fr) 7fr}.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 128px)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0;box-shadow:var(--shadow)}
+.ch{display:flex;flex-direction:column;gap:2px}
+.ch h2{font-family:var(--display);font-size:18px;margin:0}
+.ch small{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px}
+#sGrid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f label{font-size:13px;color:var(--muted);font-weight:600}
+.f .in{display:flex;align-items:center;background:var(--field);border:1px solid var(--line);border-radius:12px;padding:0 12px;height:50px;transition:border-color .15s,box-shadow .15s}
+.f .in:focus-within{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);background:var(--card)}
+.f .in i{font-style:normal;color:var(--soft);font-size:15px;font-weight:500}
+.f input{flex:1;min-width:0;border:0;background:transparent;color:var(--fg);font:600 17px var(--body);font-variant-numeric:tabular-nums;outline:none;padding:0 6px;height:100%}
+.f input::placeholder{color:var(--soft);font-weight:500}
+.f .hint{font-size:12px;color:var(--soft);min-height:16px;line-height:1.3}
+.seg{display:flex;background:var(--field);border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{flex:1;border:0;background:transparent;color:var(--muted);font:600 14px var(--body);padding:10px;border-radius:9px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.fee{border-color:var(--accent);border-width:1.5px}
+.fee .in{height:58px}.fee input{font-size:22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--field);color:var(--fg);font:600 14px var(--body);padding:8px 14px;border-radius:999px;cursor:pointer;font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.feebar{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini{background:var(--field);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.mini small{color:var(--muted);font-size:12px;font-weight:600}
+.mini b{font-family:var(--display);font-size:21px;font-variant-numeric:tabular-nums}
+.hero{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stat{background:var(--field);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.stat small{font-size:12px;color:var(--muted);font-weight:600}
+.stat b{font-family:var(--display);font-size:22px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stat.big{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;padding:18px 20px;background:var(--row);border:1px solid var(--line)}
+.stat.big b{font-size:38px;line-height:1.1}
+.pill{font:700 13px var(--body);padding:6px 12px;border-radius:999px;white-space:nowrap}
+.g{color:var(--good)} .a{color:var(--warn)} .r{color:var(--bad)} .bl{color:var(--accent)}
+.pill.g{background:var(--good-soft)} .pill.a{background:var(--warn-soft)} .pill.r{background:var(--bad-soft)} .pill.n{background:var(--field);color:var(--muted)}
+.sub{font-family:var(--display);font-size:15px;margin:6px 0 0;color:var(--fg)}
+.list{display:grid;grid-template-columns:1fr;gap:0 28px}
+@media (min-width:1100px){.list{grid-template-columns:1fr 1fr}.list .blk{break-inside:avoid}}
+.blk{display:flex;flex-direction:column;min-width:0}
+.lh{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--soft);font-weight:700;padding:16px 0 6px}
+.li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;font-size:15px}
+.li span:first-child{color:var(--muted)}
+.li span:last-child{font-weight:600;text-align:right;white-space:nowrap}
+.li.tot{border-bottom:0;background:var(--row);margin-top:4px;padding:10px 12px;border-radius:10px}
+.li.tot span{color:var(--fg);font-weight:700}
+.checks{display:flex;flex-direction:column;gap:8px}
+.ck{display:flex;gap:10px;align-items:center;font-size:15px}
+.ck i{font-style:normal;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;flex:0 0 auto}
+.ck.ok i{background:var(--good-soft);color:var(--good)} .ck.no i{background:var(--bad-soft);color:var(--bad)}
+.note{font-size:14px;color:var(--muted);background:var(--field);border-radius:12px;padding:12px 14px;line-height:1.5}
+.note b{color:var(--fg)}
+.acts{display:flex;gap:8px;align-items:center}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--fg);font:600 14px var(--body);padding:9px 14px;border-radius:10px;cursor:pointer}
+.foot{max-width:1240px;margin:22px auto 0;text-align:center;font-size:12px;color:var(--soft)}
+.ex{font-size:12px;font-weight:700;color:var(--warn);background:var(--warn-soft);padding:4px 10px;border-radius:999px;white-space:nowrap}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:520px){.card{padding:16px}.stat b{font-size:19px}.stat.big b{font-size:32px}.tab{flex:0 0 auto;padding:9px 12px}h1{font-size:19px}.ex{display:none}}
+@media (max-width:370px){.grid{grid-template-columns:1fr}.hero{grid-template-columns:1fr 1fr}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="top"><h1>QS <span>Deal</span> Calculator</h1><div class="acts"><span class="ex" id="exTag" hidden>Example numbers</span><button class="btn" id="clear" type="button">Clear</button></div></div>
+    <nav class="tabs" role="tablist" id="tabs"></nav>
+  </header>
+
+  <div class="cols"><div class="side">
+  <section class="card" aria-labelledby="h-prop">
+    <div class="ch"><h2 id="h-prop">The house</h2><small>Monthly for rent, taxes, insurance, HOA</small></div>
+    <div class="grid" id="propGrid"></div>
+  </section>
+
+  <section class="card fee" aria-labelledby="h-fee">
+    <div class="ch"><h2 id="h-fee">Your assignment fee</h2><small id="feeSub">What you want to make</small></div>
+    <div class="f"><div class="in"><i>$</i><input id="p.fee" data-k="p.fee" inputmode="decimal" autocomplete="off" placeholder="10,000"></div></div>
+    <div class="chips" id="feeChips"></div>
+    <div class="feebar">
+      <div class="mini"><small>Max fee this deal can carry</small><b id="maxFee">—</b></div>
+      <div class="mini"><small>Buyer pays you</small><b id="toBuyer">—</b></div>
+    </div>
+    <div class="note" id="feeNote"></div>
+  </section>
+  </div>
+
+  <section class="card" id="stratCard" aria-live="polite">
+    <div class="ch"><h2 id="sTitle"></h2><small id="sSub"></small></div>
+    <div class="hero" id="hero"></div>
+    <div class="grid" id="sGrid"></div>
+    <div class="list" id="sList"></div>
+  </section>
+  </div>
+</div>
+
+<p class="foot">Free from QS Deals · Numbers stay on this device</p>
+<script>
+(() => {
+const $ = s => document.querySelector(s);
+const usd = (v, d = 0) => (v < 0 ? '−$' : '$') + Math.abs(+v || 0).toLocaleString('en-US', {minimumFractionDigits:d, maximumFractionDigits:d});
+const short = v => { const a = Math.abs(v), s = v < 0 ? '−$' : '$'; return a >= 1e6 ? s + (a / 1e6).toFixed(2) + 'M' : a >= 1e4 ? s + Math.round(a / 1e3) + 'k' : s + Math.round(a).toLocaleString('en-US'); };
+const pct = (v, d = 1) => isFinite(v) ? (v * 100).toFixed(d) + '%' : (v > 0 ? 'Infinite' : '—');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* same math as the QS Deals app */
+const RENT_KEEP = .8, LTV = .8, YEARS = 30, FLAT = 8000, CREATIVE_CLOSE = .04;
+const pmt = (loan, r, n) => r === 0 ? loan / n : loan * r / (1 - Math.pow(1 + r, -n));
+const balAt = (c, pay, i, m) => i === 0 ? Math.max(0, c - pay * m) : Math.max(0, c * Math.pow(1 + i, m) - pay * (Math.pow(1 + i, m) - 1) / i);
+
+const EXAMPLE = {p:{asking:85000, arv:125000, repairs:8000, rent:1350, tax:120, ins:80, hoa:0, fee:10000}, st:{bal:62000, piti:640}};
+const BLANK = () => ({
+  tab:'cash', example:false,
+  p:{asking:null, arv:null, repairs:null, rent:null, tax:null, ins:null, hoa:null, fee:null},
+  cash:{offer:null, disc:20, closePct:1.25, rate:7.5},
+  flip:{rule:70, closePct:1.25, offer:null},
+  sf:{price:null, downPct:10, pay:null, rate:0, balloon:7, appr:3, req:25},
+  st:{bal:null, piti:null, price:null, down:null, rate:null},
+  hy:{price:null, downPct:10, pay:null, rate:0, balloon:7},
+  br:{fin:'cash', price:null, rehab:null, close:2, hold:4, hmPct:90, hmRate:12, hmPts:2, ltv:75, rate:7.5, term:30, refiPct:3, vac:8, mgmt:10, maint:5, capex:5}
+});
+const merge = (a, b) => { for (const k in b) a[k] = b[k] && typeof b[k] === 'object' && !Array.isArray(b[k]) ? merge(a[k] || {}, b[k]) : b[k]; return a; };
+let S;
+try { const raw = localStorage.getItem('qs-calc-v1'); S = raw ? merge(BLANK(), JSON.parse(raw)) : null; } catch (e) { S = null; }
+if (!S) { S = merge(BLANK(), JSON.parse(JSON.stringify(EXAMPLE))); S.example = true; }
+const save = () => { try { localStorage.setItem('qs-calc-v1', JSON.stringify(S)); } catch (e) {} };
+const get = k => k.split('.').reduce((o, x) => o == null ? null : o[x], S);
+const set = (k, v) => { const ks = k.split('.'), last = ks.pop(); ks.reduce((o, x) => o[x], S)[last] = v; };
+
+const D = () => { const p = S.p; return {rent:p.rent || 0, tax:p.tax || 0, ins:p.ins || 0, hoa:p.hoa || 0, fee:p.fee || 0, L:p.asking || 0, repairs:p.repairs || 0, arv:p.arv ?? (p.asking || 0)}; };
+
+/* ---------- strategies ---------- */
+const netOffer = (L, disc, fee, cp) => { const o = (L * (1 - disc) - (fee || 0)) / (1 + cp / 100); return o > 0 ? Math.floor(o / 100) * 100 : 0; };
+function cashAt(offer, d) {
+  const c = S.cash, cc = offer * c.closePct / 100, total = offer + cc + d.fee, loan = total * LTV, pi = pmt(loan, c.rate / 100 / 12, YEARS * 12);
+  const down = total - loan, entry = down + (offer > 0 ? FLAT : 0) + d.repairs, piti = pi + d.tax + d.ins, cfm = d.rent * RENT_KEEP - piti - d.hoa;
+  return {offer, cc, total, loan, pi, down, entry, piti, cfm, coc: entry > 0 ? cfm * 12 / entry : 0};
+}
+function cash() {
+  const d = D(), c = S.cash, auto = d.L ? netOffer(d.L, c.disc / 100, d.fee, c.closePct) : 0, offer = c.offer ?? auto, r = cashAt(offer, d);
+  let lo = 0, hi = d.rent * 400;
+  if (d.rent > 0) for (let k = 0; k < 70; k++) { const m = (lo + hi) / 2; if (cashAt(m, d).coc >= .2) lo = m; else hi = m; }
+  r.max = d.rent > 0 && cashAt(lo, d).coc >= .2 - 1e-6 && lo > 1 ? Math.floor(lo / 500) * 500 : 0;
+  /* biggest fee with this offer that still gives the buyer 20% cash-on-cash */
+  let flo = 0, fhi = 1e6; const ok = f => cashAt(offer, {...d, fee:f}).coc >= .2;
+  if (offer > 0 && d.rent > 0 && ok(0)) { for (let k = 0; k < 60; k++) { const m = (flo + fhi) / 2; if (ok(m)) flo = m; else fhi = m; } r.maxFee = flo; } else r.maxFee = offer > 0 && d.rent > 0 ? -1 : null;
+  r.mao70 = d.arv > 0 ? Math.max(0, Math.floor((d.arv * .7 - d.repairs - d.fee) / 100) * 100) : 0;
+  Object.assign(r, {d, auto, toBuyer: offer + d.fee, ready: offer > 0 && d.rent > 0, target:.2, amber:.12});
+  return r;
+}
+function flip() {
+  const d = D(), f = S.flip, rule = f.rule / 100, cp = f.closePct, net = d.arv * rule - d.repairs - d.fee, auto = net > 0 ? Math.floor(net / (1 + cp / 100) / 100) * 100 : 0;
+  const offer = f.offer ?? auto, cc = offer * cp / 100, toBuyer = offer + d.fee, allIn = toBuyer + cc + d.repairs, pctArv = d.arv ? allIn / d.arv : 0;
+  const maxFee = d.arv > 0 && offer > 0 ? d.arv * rule - offer - cc - d.repairs : null;
+  return {d, rule, cp, auto, offer, cc, toBuyer, allIn, pctArv, spread: d.arv - allIn, maxFee, ready: d.arv > 0 && offer > 0, fits: pctArv <= rule + 1e-9};
+}
+const feeRoom = (cfm, entry, fee, target) => cfm > 0 ? cfm * 12 / target - (entry - fee) : -1;
+function sf() {
+  const d = D(), s = S.sf, Pr = s.price ?? d.L * 1.1, downPct = s.downPct / 100, down = Pr * downPct, pay = s.pay ?? d.rent * .4;
+  const rate = (s.rate || 0) / 100, years = s.balloon || 7, carry = Pr - down, bal = balAt(carry, pay, rate / 12, years * 12);
+  const cfm = d.rent - pay - d.rent * (1 - RENT_KEEP) - d.tax - d.ins - d.hoa, cc = Pr * CREATIVE_CLOSE, entry = down + cc + d.fee + d.repairs, coc = entry > 0 ? cfm * 12 / entry : 0;
+  const arv = d.arv, val = arv * Math.pow(1 + s.appr / 100, years), eqPct = val > 0 ? (val - bal) / val : 0, req = s.req / 100;
+  const checks = [['Cash flow $200+/mo', cfm >= 200], ['Cash-on-cash 12%+', coc >= .12], ['Down 15% or less', downPct <= .15], ['Cash in 15% or less of price', Pr > 0 && entry / Pr <= .15], ['Rate 4% or less', rate <= .04], ['Balloon 5+ years', years >= 5], ['Refinance works at balloon', eqPct >= req]];
+  return {d, P:Pr, downPct, down, pay, rate, years, carry, bal, cfm, cc, entry, coc, val, eqPct, req, checks, toBuyer: null, maxFee: feeRoom(cfm, entry, d.fee, .12), ready: Pr > 0 && d.rent > 0, target:.12, amber:.08};
+}
+function st() {
+  const d = D(), s = S.st, Pr = s.price ?? d.L, bal = s.bal || 0, piti = s.piti || 0, equity = Math.max(0, Pr - bal), down = s.down ?? equity;
+  const cc = Pr * CREATIVE_CLOSE, entry = down + cc + d.fee + d.repairs, cfm = d.rent * RENT_KEEP - piti - d.hoa, coc = entry > 0 ? cfm * 12 / entry : 0;
+  const eqPct = d.L > 0 ? Math.max(0, d.L - bal) / d.L : 0;
+  const checks = [['Cash flow $150+/mo', cfm >= 150], ["Seller's equity 15% or less", eqPct <= .15], ['Cash-on-cash 12%+', coc >= .12], ['Down 15% or less', Pr > 0 && down / Pr <= .15], ['Cash in 15% or less of price', Pr > 0 && entry / Pr <= .15]];
+  if (s.rate != null) { const mr = bal > 150000 ? .05 : .08; checks.push([`Loan rate ${mr * 100}% or less`, s.rate / 100 <= mr]); }
+  return {d, P:Pr, bal, piti, equity, down, cc, entry, cfm, coc, eqPct, checks, maxFee: feeRoom(cfm, entry, d.fee, .12), ready: Pr > 0 && d.rent > 0 && bal > 0 && piti > 0, target:.12, amber:.08, netList: d.L * .93 - bal, netUs: Pr * .97 - bal};
+}
+function hy() {
+  const d = D(), s = S.hy, bal = S.st.bal || 0, piti = S.st.piti || 0, Pr = s.price ?? d.L * 1.1, downPct = s.downPct / 100, down = Pr * downPct;
+  const carry = Math.max(0, Pr - down - bal), rate = (s.rate || 0) / 100, i = rate / 12, years = s.balloon || 7, autoPay = carry > 0 ? pmt(carry, i, 360) : 0, pay = s.pay ?? autoPay;
+  const bbal = balAt(carry, pay, i, years * 12), cfm = d.rent * RENT_KEEP - piti - pay - d.hoa, cc = Pr * CREATIVE_CLOSE, entry = down + cc + d.fee + d.repairs, coc = entry > 0 ? cfm * 12 / entry : 0;
+  const eqPct = d.L > 0 ? Math.max(0, d.L - bal) / d.L : 0;
+  const checks = [["Seller's equity 30%+", eqPct >= .3], ['Cash flow $200+/mo', cfm >= 200], ['Cash-on-cash 12%+', coc >= .12], ['Down 15% or less', downPct <= .15], ['Cash in 15% or less of price', Pr > 0 && entry / Pr <= .15], ['Rate 4% or less', rate <= .04], ['Balloon 5+ years', years >= 5]];
+  return {d, P:Pr, downPct, down, bal, piti, carry, rate, years, pay, autoPay, bbal, cfm, cc, entry, coc, eqPct, checks, maxFee: feeRoom(cfm, entry, d.fee, .12), ready: Pr > 0 && d.rent > 0 && bal > 0 && piti > 0, target:.12, amber:.08};
+}
+function br() {
+  const d = D(), o = S.br, n = k => +o[k] || 0, price = o.price ?? d.L, rehab = o.rehab ?? d.repairs, arv = d.arv, rent = d.rent, fee = d.fee;
+  const hold = n('hold'), holdMo = Math.round(d.tax + d.ins + d.hoa + 150), buyPrice = price + fee, closeBuy = buyPrice * n('close') / 100;
+  const hm = o.fin === 'hm' ? (buyPrice + rehab) * n('hmPct') / 100 : 0, hmPts = hm * n('hmPts') / 100, hmInt = hm * n('hmRate') / 100 / 12 * hold;
+  const holding = holdMo * hold, allIn = buyPrice + closeBuy + rehab + holding + hmPts + hmInt, cashIn = allIn - hm;
+  const loan = arv * n('ltv') / 100, refiCost = loan * n('refiPct') / 100, cashOut = loan - refiCost - hm, left = cashIn - cashOut;
+  const pi = loan > 0 ? pmt(loan, n('rate') / 100 / 12, Math.max(1, n('term')) * 12) : 0;
+  const egi = rent * (1 - n('vac') / 100), opex = rent * (n('mgmt') + n('maint') + n('capex')) / 100 + d.tax + d.ins + d.hoa;
+  const noi = egi - opex, cf = noi - pi, coc = left > 0 ? cf * 12 / left : (cf > 0 ? Infinity : -Infinity), dscr = pi > 0 ? noi / pi : 0;
+  const maxAllIn = loan - refiCost, maxFee = arv > 0 && price > 0 ? fee + (maxAllIn - allIn) / (1 + n('close') / 100) : null;
+  const ready = price > 0 && arv > 0 && rent > 0, good = ready && cf > 0 && dscr >= 1.2 && (left <= 0 || coc >= .12), ok = ready && cf > 0 && dscr >= 1;
+  return {d, price, rehab, arv, rent, fee, buyPrice, closeBuy, hm, hmPts, hmInt, holding, holdMo, allIn, cashIn, loan, refiCost, cashOut, left, pi, egi, opex, noi, cf, coc, dscr, maxAllIn, maxFee, ready, good, ok};
+}
+
+/* ---------- inputs ---------- */
+const PROP = [['p.asking', 'Asking price', '$'], ['p.arv', 'ARV', '$', () => S.p.asking ? 'Blank = asking price' : 'After repairs'], ['p.repairs', 'Repairs', '$'], ['p.rent', 'Rent', '$', () => 'Per month'],
+  ['p.tax', 'Taxes', '$', () => 'Per month'], ['p.ins', 'Insurance', '$', () => 'Per month'], ['p.hoa', 'HOA', '$', () => 'Per month, 0 if none']];
+const field = ([k, label, unit, hint]) => `<div class="f"><label for="${k}">${esc(label)}</label><div class="in">${unit === '$' ? '<i>$</i>' : ''}<input id="${k}" data-k="${k}" inputmode="decimal" autocomplete="off">${unit && unit !== '$' ? `<i>${unit}</i>` : ''}</div><div class="hint" data-h="${k}"></div></div>`;
+const HINTS = {};
+const reg = list => { list.forEach(x => { if (x[3]) HINTS[x[0]] = x[3]; }); return list.map(field).join(''); };
+$('#propGrid').innerHTML = reg(PROP);
+
+const TABS = [['cash', 'Cash · DSCR'], ['flip', 'Fix & Flip'], ['sf', 'Seller Finance'], ['st', 'Takeover'], ['hy', 'Hybrid'], ['br', 'BRRRR']];
+$('#tabs').innerHTML = TABS.map(([k, t]) => `<button class="tab" role="tab" data-tab="${k}" type="button">${t}</button>`).join('');
+const FEES = [5000, 7500, 10000, 15000, 20000, 25000];
+$('#feeChips').innerHTML = FEES.map(f => `<button class="chip" type="button" data-fee="${f}">${short(f)}</button>`).join('');
+
+const fmtIn = v => v == null ? '' : (Math.round(v * 100) / 100).toLocaleString('en-US', {maximumFractionDigits:2});
+const parse = s => { const t = String(s).replace(/[$,%\s]/g, ''); if (t === '') return null; const n = parseFloat(t); return isFinite(n) ? n : null; };
+
+function stratFields() {
+  const t = S.tab, r = calc();
+  const auto = {
+    'cash.offer': r.auto ? usd(r.auto) : '', 'flip.offer': r.auto ? usd(r.auto) : '',
+    'sf.price': usd(D().L * 1.1), 'sf.pay': usd(D().rent * .4), 'st.price': usd(D().L), 'st.down': r.equity != null ? usd(r.equity) : '',
+    'hy.price': usd(D().L * 1.1), 'hy.pay': r.autoPay != null ? usd(r.autoPay) : '', 'br.price': usd(D().L), 'br.rehab': usd(D().repairs)
+  };
+  return auto;
+}
+const SF = {
+  cash: [['cash.offer', 'Offer to seller', '$', () => 'Blank = asking − discount − fee'], ['cash.disc', 'Discount off asking', '%'], ['cash.closePct', 'Closing costs', '%'], ['cash.rate', 'DSCR loan rate', '%', () => '80% loan, 30 years']],
+  flip: [['flip.offer', 'Offer to seller', '$', () => 'Blank = max offer'], ['flip.rule', 'Rule (% of ARV)', '%', () => 'Most flippers use 70%'], ['flip.closePct', 'Closing costs', '%']],
+  sf: [['sf.price', 'Price to seller', '$', () => 'Blank = asking +10%'], ['sf.downPct', 'Down payment', '%'], ['sf.pay', 'Monthly to seller', '$', () => 'Blank = 40% of rent'], ['sf.rate', 'Interest rate', '%'], ['sf.balloon', 'Balloon', 'yrs'], ['sf.appr', 'Appreciation', '%/yr'], ['sf.req', 'Bank needs equity', '%']],
+  st: [['st.bal', 'Loan balance', '$', () => 'What the seller owes'], ['st.piti', "Seller's PITI", '$', () => 'Per month, with taxes + ins.'], ['st.price', 'Price to seller', '$', () => 'Blank = asking'], ['st.down', 'Cash to seller', '$', () => 'Blank = their equity'], ['st.rate', 'Loan rate (optional)', '%']],
+  hy: [['st.bal', 'Loan balance', '$', () => 'Stays in place'], ['st.piti', "Seller's PITI", '$', () => 'You take it over'], ['hy.price', 'Price to seller', '$', () => 'Blank = asking +10%'], ['hy.downPct', 'Down payment', '%'], ['hy.pay', 'Monthly on equity', '$', () => 'Blank = 30-yr payment'], ['hy.rate', 'Rate on equity', '%'], ['hy.balloon', 'Balloon', 'yrs']],
+  br: [['br.price', 'Offer to seller', '$', () => 'Blank = asking'], ['br.rehab', 'Rehab', '$', () => 'Blank = repairs'], ['br.close', 'Closing (buy)', '%'], ['br.hold', 'Months to rehab', 'mo'], ['br.ltv', 'Refi loan (% of ARV)', '%'], ['br.rate', 'Refi rate', '%'], ['br.refiPct', 'Refi costs', '%'], ['br.vac', 'Vacancy', '%'], ['br.mgmt', 'Management', '%'], ['br.maint', 'Maintenance', '%'], ['br.capex', 'CapEx', '%']]
+};
+const INFO = {
+  cash: ['Cash · DSCR loan', 'Buyer wants 20%+ cash-on-cash'], flip: ['Fix & Flip', 'ARV × rule − repairs − closing − fee'],
+  sf: ['Seller Finance', '10 · 10 · 40, target 12%+'], st: ['Takeover (subject-to)', 'Best when seller has ≤15% equity'],
+  hy: ['Hybrid', 'Takeover + seller-finance the equity'], br: ['BRRRR', 'Buy, rehab, rent, refinance, repeat']
+};
+
+function buildStrat() {
+  const t = S.tab;
+  $('#sTitle').textContent = INFO[t][0]; $('#sSub').textContent = INFO[t][1];
+  let html = reg(SF[t]);
+  if (t === 'br') html = `<div class="f" style="grid-column:1/-1"><label>Buy with</label><div class="seg" id="finSeg"><button type="button" data-fin="cash">All cash</button><button type="button" data-fin="hm">Hard money</button></div></div>` + html +
+    (S.br.fin === 'hm' ? reg([['br.hmPct', 'Hard money covers', '%', () => 'Of price + rehab'], ['br.hmRate', 'Hard money rate', '%'], ['br.hmPts', 'Points', '%']]) : '');
+  $('#sGrid').innerHTML = html;
+  document.querySelectorAll('#tabs .tab').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === t));
+  if (t === 'br') document.querySelectorAll('#finSeg button').forEach(b => { b.setAttribute('aria-pressed', b.dataset.fin === S.br.fin); b.onclick = () => { S.br.fin = b.dataset.fin; save(); buildStrat(); }; });
+  fillInputs(); render();
+}
+function fillInputs() { document.querySelectorAll('input[data-k]').forEach(i => { if (document.activeElement !== i) i.value = fmtIn(get(i.dataset.k)); }); }
+
+const calc = () => ({cash, flip, sf, st, hy, br})[S.tab]();
+const tone = (v, g, a) => v >= g ? 'g' : v >= a ? 'a' : 'r';
+const li = (k, v, cls = '') => `<div class="li ${cls}"><span>${k}</span><span>${v}</span></div>`;
+const lh = t => `</div><div class="blk"><div class="lh">${t}</div>`;
+const checks = c => `${lh('Rules')}<div class="checks">${c.map(([t, ok]) => `<div class="ck ${ok ? 'ok' : 'no'}"><i>${ok ? '✓' : '✕'}</i>${esc(t)}</div>`).join('')}</div>`;
+const stat = (k, v, c = '') => `<div class="stat"><small>${k}</small><b class="${c}">${v}</b></div>`;
+const big = (k, v, c, pill) => `<div class="stat big"><div><small>${k}</small><br><b class="${c}">${v}</b></div>${pill}</div>`;
+
+function render() {
+  const t = S.tab, r = calc(), d = D(), auto = stratFields();
+  document.querySelectorAll('[data-h]').forEach(h => { const f = HINTS[h.dataset.h]; h.textContent = f ? f() : ''; });
+  document.querySelectorAll('input[data-k]').forEach(i => { const a = auto[i.dataset.k]; i.placeholder = a ? a.replace(/^\$/, '') : (i.dataset.k === 'p.fee' ? '10,000' : '0'); });
+  document.querySelectorAll('[data-fee]').forEach(b => b.setAttribute('aria-pressed', +b.dataset.fee === S.p.fee));
+  $('#exTag').hidden = !S.example;
+
+  /* fee panel */
+  const mf = r.maxFee, fee = d.fee;
+  const tb = t === 'cash' || t === 'flip' ? r.toBuyer : t === 'br' ? r.buyPrice : (r.P || 0) + fee;
+  $('#toBuyer').textContent = tb ? usd(tb) : '—';
+  const mfOk = mf != null && mf >= 0;
+  $('#maxFee').textContent = mf == null ? '—' : mfOk ? usd(Math.floor(mf / 100) * 100) : 'None';
+  $('#maxFee').className = mf == null ? '' : !mfOk ? 'r' : fee <= mf ? 'g' : 'r';
+  const goal = {cash:'20% cash-on-cash for the buyer', flip:`the ${Math.round(S.flip.rule)}% rule`, sf:'12% cash-on-cash for the buyer', st:'12% cash-on-cash for the buyer', hy:'12% cash-on-cash for the buyer', br:'the buyer getting all their cash back at refinance'}[t];
+  $('#feeNote').innerHTML = mf == null ? 'Fill in the house numbers to see how big a fee this deal can carry.'
+    : !mfOk ? `At this price the deal misses ${goal} even with no fee. Lower your offer to the seller.`
+    : fee <= mf ? `Your <b>${usd(fee)}</b> fee fits. You could ask up to <b>${usd(Math.floor(mf / 100) * 100)}</b> and still keep ${goal}.`
+    : `Your <b>${usd(fee)}</b> is <b>${usd(fee - mf)}</b> too much for ${goal}. Lower the fee or the offer to the seller.`;
+  $('#feeSub').textContent = t === 'cash' && S.cash.offer == null ? 'Comes out of the seller’s offer' : 'Added on top of the price';
+
+  let hero = '', list = '';
+  if (t === 'cash') {
+    const c = tone(r.coc, .2, .12);
+    hero = big('Buyer cash-on-cash', r.ready ? pct(r.coc) : '—', r.ready ? c : '', `<span class="pill ${r.ready ? c : 'n'}">${!r.ready ? 'Needs price + rent' : r.coc >= .2 ? 'Buyers will want it' : r.coc >= .12 ? 'Tight' : 'Too thin'}</span>`) +
+      stat('Offer to seller', r.offer ? short(r.offer) : '—', 'bl') + stat('Cash flow /mo', short(r.cfm), r.cfm >= 0 ? 'g' : 'r') + stat('Max offer', r.max ? short(r.max) : '—', r.max >= r.offer ? 'g' : 'r');
+    list = lh('Monthly') + li('Rent × 80%', usd(d.rent * .8, 2)) + li(`Loan P&amp;I (${S.cash.rate}%, 30 yrs)`, '−' + usd(r.pi, 2)) + li('Taxes + insurance', '−' + usd(d.tax + d.ins, 2)) + li('HOA', '−' + usd(d.hoa, 2)) +
+      li('Cash flow', `<span class="${r.cfm >= 0 ? 'g' : 'r'}">${usd(r.cfm, 2)}</span>`, 'tot') +
+      lh('Cash to enter') + li('Offer to seller', usd(r.offer)) + li('Your assignment fee', usd(d.fee)) + li('Buyer pays (offer + fee)', usd(r.toBuyer)) + li(`Closing (${S.cash.closePct}%)`, usd(r.cc)) +
+      li('Down payment (20%)', usd(r.down)) + li('Flat fees', usd(r.offer > 0 ? FLAT : 0)) + (d.repairs ? li('Repairs', usd(d.repairs)) : '') + li('Cash to enter', usd(r.entry), 'tot') +
+      li('Max offer for 20%', r.max ? usd(r.max) : 'Not reachable', 'tot') +
+      lh('Fix &amp; flip check') + li('ARV × 70% − repairs − fee', r.mao70 ? usd(r.mao70) : '—', 'tot') +
+      `<div class="note" style="margin-top:10px">${r.mao70 ? (r.offer <= r.mao70 ? 'This offer also passes the 70% rule, so flippers can buy it too.' : `This offer is ${usd(r.offer - r.mao70)} over the 70% rule: fine for rental buyers, too high for flippers.`) : 'Add ARV to check the 70% rule.'}</div>`;
+  } else if (t === 'flip') {
+    const c = !r.ready ? 'n' : r.fits ? 'g' : r.pctArv <= r.rule + .05 ? 'a' : 'r';
+    hero = big('Buyer all-in, % of ARV', r.ready ? pct(r.pctArv) : '—', r.ready ? c : '', `<span class="pill ${c}">${!r.ready ? 'Needs ARV' : r.fits ? `Fits ${Math.round(r.rule * 100)}% rule` : 'Too high'}</span>`) +
+      stat('Offer to seller', r.offer ? short(r.offer) : '—', 'bl') + stat('Buyer pays', short(r.toBuyer)) + stat('Buyer room', short(r.spread), r.spread > 0 ? 'g' : 'r');
+    list = lh('Max offer') + li('ARV', usd(d.arv)) + li(`× ${S.flip.rule}%`, usd(d.arv * r.rule)) + li('Repairs', '−' + usd(d.repairs)) + li('Your assignment fee', '−' + usd(d.fee)) +
+      li(`Closing (${r.cp}%)`, '−' + usd(r.auto * r.cp / 100)) + li('Max offer to seller', `<span class="bl">${usd(r.auto)}</span>`, 'tot') +
+      lh('Your buyer (the flipper)') + li('Pays you (offer + fee)', usd(r.toBuyer)) + li('Closing', usd(r.cc)) + li('Repairs', usd(d.repairs)) + li('All-in', usd(r.allIn), 'tot') +
+      li('Room before selling costs', `<span class="${r.spread > 0 ? 'g' : 'r'}">${usd(r.spread)}</span>`, 'tot');
+  } else if (t === 'sf' || t === 'st' || t === 'hy') {
+    const c = tone(r.coc, .12, .08);
+    hero = big('Buyer cash-on-cash', r.ready ? pct(r.coc) : '—', r.ready ? c : '', `<span class="pill ${r.ready ? c : 'n'}">${!r.ready ? (t === 'sf' ? 'Needs price + rent' : 'Needs loan + PITI') : r.coc >= .15 ? 'Great' : r.coc >= .12 ? 'Good' : r.coc >= .08 ? 'Tight' : 'Too thin'}</span>`) +
+      stat('Price to seller', short(r.P), 'bl') + stat('Cash flow /mo', short(r.cfm), r.cfm >= 0 ? 'g' : 'r') + stat(t === 'sf' ? 'Cash in' : 'Seller equity', t === 'sf' ? short(r.entry) : pct(r.eqPct, 0));
+    list = lh('Monthly') + li('Rent', usd(d.rent, 2)) + li('Vacancy &amp; management (20%)', '−' + usd(d.rent * .2, 2)) +
+      (t === 'sf' ? li('Payment to seller', '−' + usd(r.pay, 2)) + li('Taxes + insurance + HOA', '−' + usd(d.tax + d.ins + d.hoa, 2))
+        : li('PITI you take over', '−' + usd(r.piti, 2)) + (t === 'hy' ? li('Payment on equity', '−' + usd(r.pay, 2)) : '') + li('HOA', '−' + usd(d.hoa, 2))) +
+      li('Cash flow', `<span class="${r.cfm >= 0 ? 'g' : 'r'}">${usd(r.cfm, 2)}</span>`, 'tot') +
+      lh('Cash to enter') + li(t === 'st' ? 'Cash to seller' : 'Down payment', usd(r.down)) + li('Closing (4%)', usd(r.cc)) + li('Your assignment fee', usd(d.fee)) + (d.repairs ? li('Repairs', usd(d.repairs)) : '') + li('Cash to enter', usd(r.entry), 'tot');
+    if (t === 'sf') list += lh('Refinance at balloon') + li('Owed to seller then', usd(r.bal)) + li(`Value in ${r.years} yrs`, usd(r.val)) + li('Equity at balloon', `<span class="${r.eqPct >= r.req ? 'g' : 'r'}">${pct(r.eqPct, 0)}</span>`, 'tot');
+    if (t === 'st') list += lh('Why the seller says yes') + li('Sells with an agent (−7%, − loan)', usd(r.netList)) + li('Sells to you (−3%, − loan)', usd(r.netUs)) + li('Difference', `<span class="${r.netUs >= r.netList ? 'g' : 'r'}">${usd(r.netUs - r.netList)}</span>`, 'tot');
+    if (t === 'hy') list += lh('Seller financing') + li('Financed by seller', usd(r.carry)) + li(`Owed at ${r.years}-yr balloon`, usd(r.bbal), 'tot');
+    list += checks(r.checks);
+  } else {
+    const c = !r.ready ? 'n' : r.good ? 'g' : r.ok ? 'a' : 'r';
+    hero = big('Cash left in after refi', r.ready ? (r.left <= 0 ? usd(0) : short(r.left)) : '—', r.ready ? (r.left <= 0 ? 'g' : c) : '', `<span class="pill ${c}">${!r.ready ? 'Needs price, ARV, rent' : r.left <= 0 ? 'All money back' : r.good ? 'Good deal' : r.ok ? 'Works' : 'Doesn’t work'}</span>`) +
+      stat('Cash flow /mo', short(r.cf), r.cf >= 0 ? 'g' : 'r') + stat('Cash-on-cash', r.left <= 0 && r.cf > 0 ? 'Infinite' : pct(r.coc), r.left <= 0 || r.coc >= .12 ? 'g' : 'r') + stat('DSCR', r.dscr ? r.dscr.toFixed(2) : '—', r.dscr >= 1.2 ? 'g' : r.dscr >= 1 ? 'a' : 'r');
+    list = lh('Buy + rehab') + li('Offer to seller', usd(r.price)) + li('Your assignment fee', usd(r.fee)) + li('Buyer pays (offer + fee)', usd(r.buyPrice)) + li(`Closing (${S.br.close}%)`, usd(r.closeBuy)) + li('Rehab', usd(r.rehab)) +
+      li(`Holding (${S.br.hold} mo × ${usd(r.holdMo)})`, usd(r.holding)) + (r.hm ? li('Hard money points + interest', usd(r.hmPts + r.hmInt)) : '') + li('All-in', usd(r.allIn), 'tot') + (r.hm ? li('Hard money loan', '−' + usd(r.hm)) + li('Buyer cash in', usd(r.cashIn), 'tot') : '') +
+      lh('Refinance') + li(`New loan (${S.br.ltv}% of ARV)`, usd(r.loan)) + li('Refi costs', '−' + usd(r.refiCost)) + (r.hm ? li('Pay off hard money', '−' + usd(r.hm)) : '') + li('Cash back to buyer', usd(r.cashOut)) +
+      li('Cash left in the deal', `<span class="${r.left <= 0 ? 'g' : 'a'}">${usd(Math.max(0, r.left))}</span>`, 'tot') + li('Max all-in to get all cash back', usd(r.maxAllIn), 'tot') +
+      lh('Monthly after refi') + li('Rent', usd(r.rent, 2)) + li(`Vacancy (${S.br.vac}%)`, '−' + usd(r.rent - r.egi, 2)) + li('Expenses', '−' + usd(r.opex, 2)) + li(`Loan P&amp;I (${S.br.rate}%)`, '−' + usd(r.pi, 2)) +
+      li('Cash flow', `<span class="${r.cf >= 0 ? 'g' : 'r'}">${usd(r.cf, 2)}</span>`, 'tot');
+  }
+  $('#hero').innerHTML = hero; $('#sList').innerHTML = ('<div class="blk">' + list + '</div>').replace(/<div class="blk"><\/div>/g, '');
+}
+
+/* ---------- events ---------- */
+/* live thousands separators while typing, caret kept in place */
+function liveFmt(el) {
+  const v = el.value, pos = el.selectionStart ?? v.length, keep = v.slice(0, pos).replace(/[^0-9.]/g, '').length;
+  let c = v.replace(/[^0-9.]/g, ''); const dot = c.indexOf('.'); if (dot >= 0) c = c.slice(0, dot + 1) + c.slice(dot + 1).replace(/\./g, '');
+  let [i, dec] = c.split('.'); i = i.replace(/^0+(?=\d)/, '');
+  const out = i.replace(/\B(?=(\d{3})+(?!\d))/g, ',') + (dec !== undefined ? '.' + dec.slice(0, 2) : '');
+  if (out === v) return;
+  el.value = out; let n = 0, p = 0; while (p < out.length && n < keep) { if (/[0-9.]/.test(out[p])) n++; p++; }
+  try { el.setSelectionRange(p, p); } catch (er) {}
+}
+/* backspace on a comma deletes the digit before it */
+document.addEventListener('keydown', e => {
+  const el = e.target; if (!el.dataset || !el.dataset.k || el.selectionStart !== el.selectionEnd) return;
+  const p = el.selectionStart;
+  if (e.key === 'Backspace' && el.value[p - 1] === ',') el.setSelectionRange(p - 1, p - 1);
+  if (e.key === 'Delete' && el.value[p] === ',') el.setSelectionRange(p + 1, p + 1);
+});
+document.addEventListener('input', e => {
+  const k = e.target.dataset && e.target.dataset.k; if (!k) return;
+  liveFmt(e.target);
+  let v = parse(e.target.value);
+  if (v != null && v < 0) v = 0;
+  const required = /^(cash\.(disc|closePct|rate)|flip\.(rule|closePct)|sf\.(downPct|rate|balloon|appr|req)|hy\.(downPct|rate|balloon)|br\.(?!price|rehab).+)$/.test(k);
+  set(k, v == null && required ? BLANK()[k.split('.')[0]][k.split('.')[1]] : v);
+  if (S.example) S.example = false;
+  save(); render();
+});
+document.addEventListener('blur', e => { if (e.target.dataset && e.target.dataset.k) e.target.value = fmtIn(get(e.target.dataset.k)); }, true);
+document.addEventListener('focusin', e => { if (e.target.dataset && e.target.dataset.k) setTimeout(() => { try { e.target.select(); } catch (er) {} }, 0); });
+$('#tabs').addEventListener('click', e => { const b = e.target.closest('[data-tab]'); if (!b) return; S.tab = b.dataset.tab; save(); buildStrat(); b.scrollIntoView({inline:'nearest', block:'nearest'}); });
+$('#feeChips').addEventListener('click', e => { const b = e.target.closest('[data-fee]'); if (!b) return; S.p.fee = +b.dataset.fee; S.example = false; save(); fillInputs(); render(); });
+let armed = false, armT;
+$('#clear').addEventListener('click', e => {
+  if (!armed) { armed = true; e.target.textContent = 'Tap again to clear'; clearTimeout(armT); armT = setTimeout(() => { armed = false; e.target.textContent = 'Clear'; }, 3000); return; }
+  armed = false; e.target.textContent = 'Clear'; const tab = S.tab; S = BLANK(); S.tab = tab; save(); buildStrat();
+});
+buildStrat();
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register('sw.js').catch(() => {});
+})();
+</script>
+
+</body>
+</html>
