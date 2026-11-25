@@ -1,24 +1,24 @@
 {
- "version": "7.32.1",
- "notes": "The built-in browser now opens as a window over the app with a blurred background. Cleaner purchase rows: Zillow and Copy only.",
+ "version": "7.32.2",
+ "notes": "Built-in browser: websites now load in English, and the yellow mouse indicator follows your mouse inside it.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-Setup-7.32.1.exe",
-   "sha256": "fbeff13a64abb320c1f217f9790fab12a02fc69638004b7e87190df823cdb8cd"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-Setup-7.32.2.exe",
+   "sha256": "319ccc72bea445bd96b4f5128d3a40328244bdd4e6998479b3d464e4fce42cda"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-Clean-Setup-7.32.1.exe",
-   "sha256": "30611c9a93bbdb6e522d59ed1d6b608e439fd06e853d7cf79493c2bff26f4f70"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-Clean-Setup-7.32.2.exe",
+   "sha256": "ee02e4a2d210b458f78d8587a4c9f32e0f0f3ec073de37d7b5c7911f3e5bc883"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-7.32.1.apk",
-   "sha256": "5aad7c96f38f8ee9feba2d97af04670177fd4d31a9ef9157774e15b9a8310cd5"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-7.32.2.apk",
+   "sha256": "6384a36e04c9a820581d82fe7e006fa26fc7752132bf38f74972e0dad901ed30"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-Clean-7.32.1.apk",
-   "sha256": "3171cd78c9365dc790c2f21598460bc975047d016eeed6c338d010f09f061d30"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-Clean-7.32.2.apk",
+   "sha256": "899b1268a0800b2e2ecb9e0f9ff3635a9660dc1cad9885e03d1c1710746465bc"
   }
  }
 }
