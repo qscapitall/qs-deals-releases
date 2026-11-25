@@ -1,24 +1,24 @@
 {
- "version": "7.29.0",
- "notes": "Buyer phones now come straight from your uploaded sheets and show on every buyer. City borders on the map, a Files button to show, hide, rename, download or delete each file, sort by Biggest or Most active, instant address suggestions, a simple Excel template, buyers placed on the homes they bought, and a new account card.",
+ "version": "7.29.1",
+ "notes": "Cleaner account card, Glass mode icon in the top bar, plus everything from 7.29: phones from your sheets, city borders, map Files, sort by Biggest or Most active.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-Setup-7.29.0.exe",
-   "sha256": "9f7c82cc7e182cf82016d2df6cc24b65c8752e024fb69498b2107b571a73ee12"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-Setup-7.29.1.exe",
+   "sha256": "2090ffe86d8285704f299a83131a48274356b1f9e162c1bff6638552b3248a9a"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-Clean-Setup-7.29.0.exe",
-   "sha256": "340fb2b34a37d1b5edb05eb9b6d184aa5519f39b34cb25f23dad58fc1bde93aa"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-Clean-Setup-7.29.1.exe",
+   "sha256": "39d6dd32fca545a8d773dcb3c7ab6ba23fb9829c2d0449c0a4252b838cd9a815"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-7.29.0.apk",
-   "sha256": "41f390adb9e08156f94aee6c339dc08e3f538aa77f150e2554c6716de85d268b"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-7.29.1.apk",
+   "sha256": "28f5c8e2a9078b71aa59ebf3669079e8a41b5bb0c92a8b463d889b2b8199feb7"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-Clean-7.29.0.apk",
-   "sha256": "5526ae8a867d462e2bf776071d1f96ca0dc891dfbaf556d301e71108d76b12de"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-Clean-7.29.1.apk",
+   "sha256": "572d9cb400c0d91d3c05151bacc70d6bb2c84239b0c8d3a8ee86422d89ad8a46"
   }
  }
 }
