@@ -1,24 +1,24 @@
 {
- "version": "7.32.0",
- "notes": "New built-in browser with an ad blocker: Zillow, SpotCrime, Google Maps and more open inside QS Deals. Choose QS browser or your default browser in Settings > Open links in.",
+ "version": "7.32.1",
+ "notes": "The built-in browser now opens as a window over the app with a blurred background. Cleaner purchase rows: Zillow and Copy only.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-Setup-7.32.0.exe",
-   "sha256": "4214fa9d3cb725f3fbd48166668581fbbafdf720fa5ae74ca2c03aa459fd264e"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-Setup-7.32.1.exe",
+   "sha256": "fbeff13a64abb320c1f217f9790fab12a02fc69638004b7e87190df823cdb8cd"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-Clean-Setup-7.32.0.exe",
-   "sha256": "a7db13a4a0e68ce31fb9b95a9ce057b083bcb998405b4bcf79470cfb70d367d4"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-Clean-Setup-7.32.1.exe",
+   "sha256": "30611c9a93bbdb6e522d59ed1d6b608e439fd06e853d7cf79493c2bff26f4f70"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-7.32.0.apk",
-   "sha256": "3f40eb116da2d4fb63cc791559aec25a0765b9062845de8bfff1e9efaad47e74"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-7.32.1.apk",
+   "sha256": "5aad7c96f38f8ee9feba2d97af04670177fd4d31a9ef9157774e15b9a8310cd5"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-Clean-7.32.0.apk",
-   "sha256": "f5e1f788ec797700b4041ab48aae1d14fd9e529ceee7d5080b6365bc54c76f0a"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.1/QS-Deals-Clean-7.32.1.apk",
+   "sha256": "3171cd78c9365dc790c2f21598460bc975047d016eeed6c338d010f09f061d30"
   }
  }
 }
