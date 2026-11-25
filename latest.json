@@ -1,24 +1,24 @@
 {
- "version": "7.31.0",
- "notes": "Draw your own area on the map (pencil button) to see only the buyers inside it. Open any property a buyer bought on Zillow with one tap.",
+ "version": "7.31.1",
+ "notes": "Map drawing fixes: the drawing bar now sits at the top of the map, Cancel removes the drawing, and an orange \"Area on \u00b7 Clear\" button shows on the map.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-Setup-7.31.0.exe",
-   "sha256": "410c4c5da7e39908c8634b687d084757774f71f1ab10ee2d48e3323e2217f532"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-Setup-7.31.1.exe",
+   "sha256": "79321287b12e732d386ab17bd7ee9307eea9a1f3ce7737874ac8a4cc602cc23d"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-Clean-Setup-7.31.0.exe",
-   "sha256": "639176b0445a7eb73dbd928754b11ec3c645b25c41a801d2cdc78bed7d540ad5"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-Clean-Setup-7.31.1.exe",
+   "sha256": "40faeaf0bc3383cca569b54cb339c273ba70dbb1b18821cd8f985325899cdd9f"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-7.31.0.apk",
-   "sha256": "b578f4fbbc47c1fa621f61a17722f9a2eb17533a5f630dd8d1356cede524d019"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-7.31.1.apk",
+   "sha256": "5b4266058487410e586f55e795e625de9c1b960daa65196b237ef8dc7a1c6b9b"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-Clean-7.31.0.apk",
-   "sha256": "c1ad80b5a2045761c9ae347d8b73277ae644c9ffbe60b8e1c02b8275da641f88"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-Clean-7.31.1.apk",
+   "sha256": "7a7147dca9279cff3dac2cfcc2fa0945d0eda0809cb9f2f11e3a3f9983e024b4"
   }
  }
 }
