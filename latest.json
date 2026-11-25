@@ -1,24 +1,24 @@
 {
- "version": "7.28.1",
- "notes": "New Buyers tab: Manual or Public Records. Find investors near your deal on a free map with a radius circle, upload skip-traced city lists for any city, merge or delete repeated buyers, and a new Glass look (Light, Dark, Glass). Android: uninstall the old app first, then install this one.",
+ "version": "7.29.0",
+ "notes": "Buyer phones now come straight from your uploaded sheets and show on every buyer. City borders on the map, a Files button to show, hide, rename, download or delete each file, sort by Biggest or Most active, instant address suggestions, a simple Excel template, buyers placed on the homes they bought, and a new account card.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-Setup-7.28.1.exe",
-   "sha256": "e91687ef451155d71626939eb834804c0539f3e3d02ad6ef4892f17793e9f780"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-Setup-7.29.0.exe",
+   "sha256": "9f7c82cc7e182cf82016d2df6cc24b65c8752e024fb69498b2107b571a73ee12"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-Clean-Setup-7.28.1.exe",
-   "sha256": "dba69fb9312780b6f5db8b62a3bb975d1350f7da4304e4ae2585fcdc19d43bc0"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-Clean-Setup-7.29.0.exe",
+   "sha256": "340fb2b34a37d1b5edb05eb9b6d184aa5519f39b34cb25f23dad58fc1bde93aa"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-7.28.1.apk",
-   "sha256": "d2bbc475aae93228f905134ab81e69d61ae11482d48c04370733c906c5367452"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-7.29.0.apk",
+   "sha256": "41f390adb9e08156f94aee6c339dc08e3f538aa77f150e2554c6716de85d268b"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-Clean-7.28.1.apk",
-   "sha256": "bd538d8b2091ae6f3bc3ffb04e5443b025dbe054cb664bb9e540cb9cc9a4867f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.0/QS-Deals-Clean-7.29.0.apk",
+   "sha256": "5526ae8a867d462e2bf776071d1f96ca0dc891dfbaf556d301e71108d76b12de"
   }
  }
 }
