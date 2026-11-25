@@ -1,14 +1,24 @@
 {
- "version": "7.27.1",
- "notes": "Fixes the customer app not opening after the last update (\"second handler for qs-pay\" error).",
+ "version": "7.28.1",
+ "notes": "New Buyers tab: Manual or Public Records. Find investors near your deal on a free map with a radius circle, upload skip-traced city lists for any city, merge or delete repeated buyers, and a new Glass look (Light, Dark, Glass). Android: uninstall the old app first, then install this one.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.27.1/QS-Deals-Setup-7.27.1.exe",
-   "sha256": "b3f85c2f2f689b2dc95cbf4ecaca7bbeb454f7bbd7722600992bab497153952e"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-Setup-7.28.1.exe",
+   "sha256": "e91687ef451155d71626939eb834804c0539f3e3d02ad6ef4892f17793e9f780"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.27.1/QS-Deals-Clean-Setup-7.27.1.exe",
-   "sha256": "51d609154a41e18bf7693d716fcb6ae9a16c5795c746d9c4e650208ac6c45097"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-Clean-Setup-7.28.1.exe",
+   "sha256": "dba69fb9312780b6f5db8b62a3bb975d1350f7da4304e4ae2585fcdc19d43bc0"
+  }
+ },
+ "android": {
+  "qs": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-7.28.1.apk",
+   "sha256": "d2bbc475aae93228f905134ab81e69d61ae11482d48c04370733c906c5367452"
+  },
+  "clean": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.28.1/QS-Deals-Clean-7.28.1.apk",
+   "sha256": "bd538d8b2091ae6f3bc3ffb04e5443b025dbe054cb664bb9e540cb9cc9a4867f"
   }
  }
 }
