@@ -1,24 +1,24 @@
 {
- "version": "7.29.1",
- "notes": "Cleaner account card, Glass mode icon in the top bar, plus everything from 7.29: phones from your sheets, city borders, map Files, sort by Biggest or Most active.",
+ "version": "7.29.2",
+ "notes": "Add your profile photo (Settings > Profile photo, or tap your picture). Cleaner account card and the Glass icon in the top bar.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-Setup-7.29.1.exe",
-   "sha256": "2090ffe86d8285704f299a83131a48274356b1f9e162c1bff6638552b3248a9a"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-Setup-7.29.2.exe",
+   "sha256": "761da902eff1a5ac7d1c3b6ac2080927e9763401fac5a0070ce6b28cf6aeafab"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-Clean-Setup-7.29.1.exe",
-   "sha256": "39d6dd32fca545a8d773dcb3c7ab6ba23fb9829c2d0449c0a4252b838cd9a815"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-Clean-Setup-7.29.2.exe",
+   "sha256": "112278a8e5c4d07224ca7b2028d73f1e02488dfab5f75df1b80222f8ea55866f"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-7.29.1.apk",
-   "sha256": "28f5c8e2a9078b71aa59ebf3669079e8a41b5bb0c92a8b463d889b2b8199feb7"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-7.29.2.apk",
+   "sha256": "14832d55e426d3f8f07da38dd598fe96fdae08166ba304c6f2b676d18fc17e38"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.1/QS-Deals-Clean-7.29.1.apk",
-   "sha256": "572d9cb400c0d91d3c05151bacc70d6bb2c84239b0c8d3a8ee86422d89ad8a46"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-Clean-7.29.2.apk",
+   "sha256": "a927be234237271f10a6aaa6b7f716f9a20f2a1a3c48857c6ebdae307f7fd6cd"
   }
  }
 }
