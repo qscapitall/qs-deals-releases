@@ -1,24 +1,24 @@
 {
- "version": "7.30.0",
- "notes": "Public Records now starts empty and ready for your sheets: tap Files on the map and upload your skip-traced list for any city.",
+ "version": "7.30.1",
+ "notes": "Smoother start: one intro screen with a loading line, no more account-check box popping over it. Public Records starts empty and ready for your sheets.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-Setup-7.30.0.exe",
-   "sha256": "43d567870955cb9706491d7b0c4b1d8629c8935fffc8e38f62856f7a90da8e16"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-Setup-7.30.1.exe",
+   "sha256": "bbf2bf6b62d850824656e57d149801cc34e3b19e25b8e5acc7baab5bd066d34f"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-Clean-Setup-7.30.0.exe",
-   "sha256": "04607006d542bd01420a7e909f4ce231c29c5ec1c8d14421e6242ff9938161b7"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-Clean-Setup-7.30.1.exe",
+   "sha256": "6666adfd90f5e57ae6b66c48005d23767a3b388e2b1e55112bed62551629c319"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-7.30.0.apk",
-   "sha256": "451c9342957fcf9a9f1fd2db0b119156fe7a1b469136395ed7a6598e6afd2e0a"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-7.30.1.apk",
+   "sha256": "b18cbd3bc50136c386012027475288903ac1625515b270996da9ba462dddffd2"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-Clean-7.30.0.apk",
-   "sha256": "9fff9db840448c49dffb0bf8029f374d84dc1a1dc761ad3ffc27735a92449861"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-Clean-7.30.1.apk",
+   "sha256": "108c41d87205b57ac6e90c9e85abbb6e503801eaaa23c3bd23f2c7093fab1c0f"
   }
  }
 }
