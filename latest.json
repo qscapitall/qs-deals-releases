@@ -1,24 +1,24 @@
 {
- "version": "7.30.1",
- "notes": "Smoother start: one intro screen with a loading line, no more account-check box popping over it. Public Records starts empty and ready for your sheets.",
+ "version": "7.30.2",
+ "notes": "Uploads keep every buyer separate by Buyer ID and keep up to 40 purchases per buyer. Smoother start screen.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-Setup-7.30.1.exe",
-   "sha256": "bbf2bf6b62d850824656e57d149801cc34e3b19e25b8e5acc7baab5bd066d34f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.2/QS-Deals-Setup-7.30.2.exe",
+   "sha256": "c535d16f9f18308929c762a5f2b8f014c84c1baa39e41924e73503703b81af48"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-Clean-Setup-7.30.1.exe",
-   "sha256": "6666adfd90f5e57ae6b66c48005d23767a3b388e2b1e55112bed62551629c319"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.2/QS-Deals-Clean-Setup-7.30.2.exe",
+   "sha256": "77328e2b6cbba557b810bd002f70473a5423f557259a46c247b003810b52b824"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-7.30.1.apk",
-   "sha256": "b18cbd3bc50136c386012027475288903ac1625515b270996da9ba462dddffd2"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.2/QS-Deals-7.30.2.apk",
+   "sha256": "7843e383273b02d3d907360a242b9f642045259ac848207c31abe06af595e165"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.1/QS-Deals-Clean-7.30.1.apk",
-   "sha256": "108c41d87205b57ac6e90c9e85abbb6e503801eaaa23c3bd23f2c7093fab1c0f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.2/QS-Deals-Clean-7.30.2.apk",
+   "sha256": "d2ef61c99aacdc9dc9d0e4c18f7b332dd16de20c9db31140903c2176d843b78a"
   }
  }
 }
