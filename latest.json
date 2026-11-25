@@ -1,24 +1,24 @@
 {
- "version": "7.30.3",
- "notes": "Copy any property address from a buyer's purchase list with one tap.",
+ "version": "7.31.0",
+ "notes": "Draw your own area on the map (pencil button) to see only the buyers inside it. Open any property a buyer bought on Zillow with one tap.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.3/QS-Deals-Setup-7.30.3.exe",
-   "sha256": "39547ec6fb20ed29d51987f98b856cd81291af004c0df7bbdfc930b8673af257"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-Setup-7.31.0.exe",
+   "sha256": "410c4c5da7e39908c8634b687d084757774f71f1ab10ee2d48e3323e2217f532"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.3/QS-Deals-Clean-Setup-7.30.3.exe",
-   "sha256": "9d1de437b86d1e1da63d49f013c94f8a4640b5050c7f73d9417b09337067bfd1"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-Clean-Setup-7.31.0.exe",
+   "sha256": "639176b0445a7eb73dbd928754b11ec3c645b25c41a801d2cdc78bed7d540ad5"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.3/QS-Deals-7.30.3.apk",
-   "sha256": "77335f297f9bc801a250dfbe3dbb02e10b491d24df262d8b17c619b1cc5e2c13"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-7.31.0.apk",
+   "sha256": "b578f4fbbc47c1fa621f61a17722f9a2eb17533a5f630dd8d1356cede524d019"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.3/QS-Deals-Clean-7.30.3.apk",
-   "sha256": "341bd1e4360d8b3d557104ad7cc048ffe7187a585ad37387caffddb3491a833a"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.0/QS-Deals-Clean-7.31.0.apk",
+   "sha256": "c1ad80b5a2045761c9ae347d8b73277ae644c9ffbe60b8e1c02b8275da641f88"
   }
  }
 }
