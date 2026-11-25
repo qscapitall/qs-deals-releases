@@ -1,24 +1,24 @@
 {
- "version": "7.31.1",
- "notes": "Map drawing fixes: the drawing bar now sits at the top of the map, Cancel removes the drawing, and an orange \"Area on \u00b7 Clear\" button shows on the map.",
+ "version": "7.32.0",
+ "notes": "New built-in browser with an ad blocker: Zillow, SpotCrime, Google Maps and more open inside QS Deals. Choose QS browser or your default browser in Settings > Open links in.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-Setup-7.31.1.exe",
-   "sha256": "79321287b12e732d386ab17bd7ee9307eea9a1f3ce7737874ac8a4cc602cc23d"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-Setup-7.32.0.exe",
+   "sha256": "4214fa9d3cb725f3fbd48166668581fbbafdf720fa5ae74ca2c03aa459fd264e"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-Clean-Setup-7.31.1.exe",
-   "sha256": "40faeaf0bc3383cca569b54cb339c273ba70dbb1b18821cd8f985325899cdd9f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-Clean-Setup-7.32.0.exe",
+   "sha256": "a7db13a4a0e68ce31fb9b95a9ce057b083bcb998405b4bcf79470cfb70d367d4"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-7.31.1.apk",
-   "sha256": "5b4266058487410e586f55e795e625de9c1b960daa65196b237ef8dc7a1c6b9b"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-7.32.0.apk",
+   "sha256": "3f40eb116da2d4fb63cc791559aec25a0765b9062845de8bfff1e9efaad47e74"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.31.1/QS-Deals-Clean-7.31.1.apk",
-   "sha256": "7a7147dca9279cff3dac2cfcc2fa0945d0eda0809cb9f2f11e3a3f9983e024b4"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.0/QS-Deals-Clean-7.32.0.apk",
+   "sha256": "f5e1f788ec797700b4041ab48aae1d14fd9e529ceee7d5080b6365bc54c76f0a"
   }
  }
 }
