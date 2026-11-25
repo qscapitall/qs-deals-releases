@@ -1,24 +1,24 @@
 {
- "version": "7.29.2",
- "notes": "Add your profile photo (Settings > Profile photo, or tap your picture). Cleaner account card and the Glass icon in the top bar.",
+ "version": "7.30.0",
+ "notes": "Public Records now starts empty and ready for your sheets: tap Files on the map and upload your skip-traced list for any city.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-Setup-7.29.2.exe",
-   "sha256": "761da902eff1a5ac7d1c3b6ac2080927e9763401fac5a0070ce6b28cf6aeafab"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-Setup-7.30.0.exe",
+   "sha256": "43d567870955cb9706491d7b0c4b1d8629c8935fffc8e38f62856f7a90da8e16"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-Clean-Setup-7.29.2.exe",
-   "sha256": "112278a8e5c4d07224ca7b2028d73f1e02488dfab5f75df1b80222f8ea55866f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-Clean-Setup-7.30.0.exe",
+   "sha256": "04607006d542bd01420a7e909f4ce231c29c5ec1c8d14421e6242ff9938161b7"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-7.29.2.apk",
-   "sha256": "14832d55e426d3f8f07da38dd598fe96fdae08166ba304c6f2b676d18fc17e38"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-7.30.0.apk",
+   "sha256": "451c9342957fcf9a9f1fd2db0b119156fe7a1b469136395ed7a6598e6afd2e0a"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.29.2/QS-Deals-Clean-7.29.2.apk",
-   "sha256": "a927be234237271f10a6aaa6b7f716f9a20f2a1a3c48857c6ebdae307f7fd6cd"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.30.0/QS-Deals-Clean-7.30.0.apk",
+   "sha256": "9fff9db840448c49dffb0bf8029f374d84dc1a1dc761ad3ffc27735a92449861"
   }
  }
 }
