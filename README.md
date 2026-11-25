@@ -2,14 +2,14 @@
 
 The QS Deals apps check `latest.json` here for new versions.
 
-Current version: **7.30.2** (Windows and Android)
+Current version: **7.30.3** (Windows and Android)
 
-- Windows (QS Capital): `v7.30.2/QS-Deals-Setup-7.30.2.exe`
-- Windows (customers): `v7.30.2/QS-Deals-Clean-Setup-7.30.2.exe`
-- Android (QS Capital): `v7.30.2/QS-Deals-7.30.2.apk`
-- Android (customers): `v7.30.2/QS-Deals-Clean-7.30.2.apk`
+- Windows (QS Capital): `v7.30.3/QS-Deals-Setup-7.30.3.exe`
+- Windows (customers): `v7.30.3/QS-Deals-Clean-Setup-7.30.3.exe`
+- Android (QS Capital): `v7.30.3/QS-Deals-7.30.3.apk`
+- Android (customers): `v7.30.3/QS-Deals-Clean-7.30.3.apk`
 
-What's new in 7.30.2: phones from your uploaded sheets on every buyer, city borders on the map, a Files manager on the map (show, hide, rename, download, delete), sort by Biggest or Most active, instant address suggestions, a simple Excel template, and buyers placed on the homes they bought.
+What's new in 7.30.3: phones from your uploaded sheets on every buyer, city borders on the map, a Files manager on the map (show, hide, rename, download, delete), sort by Biggest or Most active, instant address suggestions, a simple Excel template, and buyers placed on the homes they bought.
 
 New accounts add a card for a 7-day free trial, then $29/month.
 
