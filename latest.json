@@ -1,24 +1,24 @@
 {
- "version": "7.32.2",
- "notes": "Built-in browser: websites now load in English, and the yellow mouse indicator follows your mouse inside it.",
+ "version": "7.32.3",
+ "notes": "Maps for every city: uploaded buyers in Memphis or any other city now show as pins like Detroit. Re-uploading a file adds map locations to buyers already in the app, every buyer gets a pin first, and LLC names with the word School are no longer dropped.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-Setup-7.32.2.exe",
-   "sha256": "319ccc72bea445bd96b4f5128d3a40328244bdd4e6998479b3d464e4fce42cda"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-Setup-7.32.3.exe",
+   "sha256": "8e5f7b17c0f036d00024d80bb70f0aed68dbfdaa98d16273c36f511cad168710"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-Clean-Setup-7.32.2.exe",
-   "sha256": "ee02e4a2d210b458f78d8587a4c9f32e0f0f3ec073de37d7b5c7911f3e5bc883"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-Clean-Setup-7.32.3.exe",
+   "sha256": "49c2aa909f7a1e0df59109510c30977c50e41da2f6d82543403a8091d4e91136"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-7.32.2.apk",
-   "sha256": "6384a36e04c9a820581d82fe7e006fa26fc7752132bf38f74972e0dad901ed30"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-7.32.3.apk",
+   "sha256": "36a310d7e80ad236383a48275e00a4b84666a5c4cfe8e2ab0eb0c4eb044483f7"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.2/QS-Deals-Clean-7.32.2.apk",
-   "sha256": "899b1268a0800b2e2ecb9e0f9ff3635a9660dc1cad9885e03d1c1710746465bc"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-Clean-7.32.3.apk",
+   "sha256": "6abbc78e345488a55e63867a0ca763ea417728147983379c702223b92f4c2cce"
   }
  }
 }
