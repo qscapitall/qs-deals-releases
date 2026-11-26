@@ -1,24 +1,24 @@
 {
- "version": "7.33.1",
- "notes": "Map fixed: new map tiles (CARTO, Esri backup) replace the blocked OpenStreetMap ones. Zillow links in Leads now open inside the app browser.",
+ "version": "7.33.2",
+ "notes": "Map fixed: Esri street map tiles (no key needed). Zillow links in Leads open inside the app browser.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-Setup-7.33.1.exe",
-   "sha256": "5968bb36bf8fe2325308f7eadcbda98b329572b414b03404e61ed2af7803630f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-Setup-7.33.2.exe",
+   "sha256": "5bba7c56ecac7d5f8489b527896ee1964fecd001ea0832de27c85090f272a680"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-Clean-Setup-7.33.1.exe",
-   "sha256": "9164ae4d32755beefb58231a5f767c02875e5a99356ea43aad6f16022e94fc16"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-Clean-Setup-7.33.2.exe",
+   "sha256": "cd3b3f21c5caa74666bf6ffb04d3d478dd9ef2b49ffa1ed031d764c524709de8"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-7.33.1.apk",
-   "sha256": "479f58ab9be633f64142821f7255a040edffb60b6e99651a152386e9beb6c3ef"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-7.33.2.apk",
+   "sha256": "672c78c6f16e4cc810ebdbcb929f77f57536a2c7f449e178ca763d409bd8f6a4"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-Clean-7.33.1.apk",
-   "sha256": "35af8568224eceee88d027da8f6b6322e78e331cd814555383742630e8d9fb58"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-Clean-7.33.2.apk",
+   "sha256": "64ce94c535f4e3d4c9b6364815451b0415aeb7b5e1f7eb1e087594a5a44ec668"
   }
  }
 }
