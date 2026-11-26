@@ -1,24 +1,24 @@
 {
- "version": "7.33.0",
- "notes": "Maps for every city with full portfolios, collapsible sidebar (logo refreshes the app), Zillow and web search open inside the app, phone browser fixed, faster address search, map clusters, offline map, contact status, send a deal to the top 20 buyers, upload report and cleaning.",
+ "version": "7.33.1",
+ "notes": "Map fixed: new map tiles (CARTO, Esri backup) replace the blocked OpenStreetMap ones. Zillow links in Leads now open inside the app browser.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-Setup-7.33.0.exe",
-   "sha256": "7fa0819aa07d77b3faf9dcb5eea1cb65b11d437f8957e1a14527abf88c0d08c9"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-Setup-7.33.1.exe",
+   "sha256": "5968bb36bf8fe2325308f7eadcbda98b329572b414b03404e61ed2af7803630f"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-Clean-Setup-7.33.0.exe",
-   "sha256": "c36da238f373f3fd7efee95217b90be948c6770d97c349bd74ef2ae7fc8fde91"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-Clean-Setup-7.33.1.exe",
+   "sha256": "9164ae4d32755beefb58231a5f767c02875e5a99356ea43aad6f16022e94fc16"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-7.33.0.apk",
-   "sha256": "ce53bbf1f54322fdae26caca13d0494de8e05fcecbf943fdcfc5d6114ce4dec3"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-7.33.1.apk",
+   "sha256": "479f58ab9be633f64142821f7255a040edffb60b6e99651a152386e9beb6c3ef"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-Clean-7.33.0.apk",
-   "sha256": "fc377ced472614a11fc041e87c87c73636f4c313219e6bba1c8eeadb596536a2"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.1/QS-Deals-Clean-7.33.1.apk",
+   "sha256": "35af8568224eceee88d027da8f6b6322e78e331cd814555383742630e8d9fb58"
   }
  }
 }
