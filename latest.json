@@ -1,24 +1,24 @@
 {
- "version": "7.32.3",
- "notes": "Maps for every city: uploaded buyers in Memphis or any other city now show as pins like Detroit. Re-uploading a file adds map locations to buyers already in the app, every buyer gets a pin first, and LLC names with the word School are no longer dropped.",
+ "version": "7.33.0",
+ "notes": "Maps for every city with full portfolios, collapsible sidebar (logo refreshes the app), Zillow and web search open inside the app, phone browser fixed, faster address search, map clusters, offline map, contact status, send a deal to the top 20 buyers, upload report and cleaning.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-Setup-7.32.3.exe",
-   "sha256": "8e5f7b17c0f036d00024d80bb70f0aed68dbfdaa98d16273c36f511cad168710"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-Setup-7.33.0.exe",
+   "sha256": "7fa0819aa07d77b3faf9dcb5eea1cb65b11d437f8957e1a14527abf88c0d08c9"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-Clean-Setup-7.32.3.exe",
-   "sha256": "49c2aa909f7a1e0df59109510c30977c50e41da2f6d82543403a8091d4e91136"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-Clean-Setup-7.33.0.exe",
+   "sha256": "c36da238f373f3fd7efee95217b90be948c6770d97c349bd74ef2ae7fc8fde91"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-7.32.3.apk",
-   "sha256": "36a310d7e80ad236383a48275e00a4b84666a5c4cfe8e2ab0eb0c4eb044483f7"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-7.33.0.apk",
+   "sha256": "ce53bbf1f54322fdae26caca13d0494de8e05fcecbf943fdcfc5d6114ce4dec3"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.32.3/QS-Deals-Clean-7.32.3.apk",
-   "sha256": "6abbc78e345488a55e63867a0ca763ea417728147983379c702223b92f4c2cce"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.0/QS-Deals-Clean-7.33.0.apk",
+   "sha256": "fc377ced472614a11fc041e87c87c73636f4c313219e6bba1c8eeadb596536a2"
   }
  }
 }

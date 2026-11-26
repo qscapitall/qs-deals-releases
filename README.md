@@ -2,14 +2,14 @@
 
 The QS Deals apps check `latest.json` here for new versions.
 
-Current version: **7.32.3** (Windows and Android)
+Current version: **7.33.0** (Windows and Android)
 
-- Windows (QS Capital): `v7.32.3/QS-Deals-Setup-7.32.3.exe`
-- Windows (customers): `v7.32.3/QS-Deals-Clean-Setup-7.32.3.exe`
-- Android (QS Capital): `v7.32.3/QS-Deals-7.32.3.apk`
-- Android (customers): `v7.32.3/QS-Deals-Clean-7.32.3.apk`
+- Windows (QS Capital): `v7.33.0/QS-Deals-Setup-7.33.0.exe`
+- Windows (customers): `v7.33.0/QS-Deals-Clean-Setup-7.33.0.exe`
+- Android (QS Capital): `v7.33.0/QS-Deals-7.33.0.apk`
+- Android (customers): `v7.33.0/QS-Deals-Clean-7.33.0.apk`
 
-What's new in 7.32.3: buyers from any city you upload (Memphis and others) now show on the map as pins, just like Detroit. Re-uploading a file fills in map locations for buyers you already have.
+What's new in 7.33.0: Maps for every city with full portfolios, collapsible sidebar (logo refreshes the app), Zillow and web search open inside the app, phone browser fixed, faster address search, map clusters, offline map, contact status, send a deal to the top 20 buyers, upload report and cleaning.
 
 New accounts add a card for a 7-day free trial, then $29/month.
 
