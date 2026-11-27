@@ -1,24 +1,24 @@
 {
- "version": "7.36.0",
- "notes": "One-tap skip trace: leads with no phone get a Find phones button. It looks the owner up in the background and saves the numbers. Turn on Tuxler VPN (US) first.",
+ "version": "7.36.1",
+ "notes": "Buyers \u203a Public Records: add one buyer by hand (+ Add one), not only by file.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-Setup-7.36.0.exe",
-   "sha256": "a1b1268be04a48d8928da8141a7737010f0919b436719f5d0b3568dbac552274"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-Setup-7.36.1.exe",
+   "sha256": "0adee7350f8e2507c861427a6cac9340553b4bad74e5718e6acbbb543fcc7889"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-Clean-Setup-7.36.0.exe",
-   "sha256": "50b819eb8f18a7e5b85fac1c18b9da706d2e0847c749946fab9707bb2505b34b"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-Clean-Setup-7.36.1.exe",
+   "sha256": "76c65e644b070f3fb7cde482c0e6214923121e9229ffcd35d70a9cddfb497559"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-7.36.0.apk",
-   "sha256": "1df3c486fccd5da509b9158aa26b585a97f79293723b6a95e3a641ef0f461c0a"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-7.36.1.apk",
+   "sha256": "d38e1cb375ac8a93376c4b7486e3f29a95bf1fa272c942451dd44c5294827465"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-Clean-7.36.0.apk",
-   "sha256": "9bd07176c760076c77de5cba8054835f03d194166566f25a4989331807ba38b2"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-Clean-7.36.1.apk",
+   "sha256": "0473e86abbc4b76b49c0619b6230126ccefafb412acd842afc6a3e47f8a81112"
   }
  }
 }
