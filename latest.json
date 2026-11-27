@@ -1,24 +1,24 @@
 {
- "version": "7.40.0",
- "notes": "Skip trace from your phone: searches run on your PC (QConnect + VPN) and the results come back to the phone. One search box for name + address, address, or phone. Results show mobile first with Call and Text buttons. Needs review filter, drop a file to start, smaller human check window.",
+ "version": "7.40.1",
+ "notes": "Skip trace searches run in the background again (like the CBC Skip Tracer extension): results are loaded behind the scenes and the site tab no longer opens each person's page. A page only opens when a human check is needed.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-Setup-7.40.0.exe",
-   "sha256": "548639be232c36f561715a1e3846d095067cac7a4491043eed16da8ee1145b8c"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-Setup-7.40.1.exe",
+   "sha256": "c7313a7514db6931dac0cc07adb643fe5b01c3d54247ffb90fa4204850710754"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-Clean-Setup-7.40.0.exe",
-   "sha256": "249fb5365194e1fb5a067ec244eb9467686c54d3ed2887903dcf2ed84859b692"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-Clean-Setup-7.40.1.exe",
+   "sha256": "20045b2d23b48dab007e0492a0afc3a64460d8a7671135732d60ea694f1d9ac5"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-7.40.0.apk",
-   "sha256": "0ba5b2ce420a95d52a4325f8d83ee549f007d43f796b812f41784513d3c0c671"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-7.40.1.apk",
+   "sha256": "f086e7f12173997eb1502ed1627a9950c556360c99950fca60f6f06f350dd67c"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-Clean-7.40.0.apk",
-   "sha256": "94d3a210854994020eb486576e82a63c6d77e26d5c5eb4c49ba7dc15ba1cd20c"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-Clean-7.40.1.apk",
+   "sha256": "43a1fbf4df51f9368ccc4b0f8d2f7279c7a94f3ebe26b068ec082151bb6f8f82"
   }
  }
 }
