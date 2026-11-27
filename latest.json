@@ -1,14 +1,24 @@
 {
- "version": "7.39.3",
- "notes": "Skip trace: checks the VPN address before every search, logs it, and tells you when a repeated human check is caused by Tuxler changing your address.",
+ "version": "7.40.0",
+ "notes": "Skip trace from your phone: searches run on your PC (QConnect + VPN) and the results come back to the phone. One search box for name + address, address, or phone. Results show mobile first with Call and Text buttons. Needs review filter, drop a file to start, smaller human check window.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.3/QS-Deals-Setup-7.39.3.exe",
-   "sha256": "57084cc5fb23d2aa0088373ec1bd3e71e5fa5042058c21061d0aa98404b0f772"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-Setup-7.40.0.exe",
+   "sha256": "548639be232c36f561715a1e3846d095067cac7a4491043eed16da8ee1145b8c"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.3/QS-Deals-Clean-Setup-7.39.3.exe",
-   "sha256": "f19e09fb9beb76c89e0746a670cde30399850593b76d35e9967b0cde491f32d4"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-Clean-Setup-7.40.0.exe",
+   "sha256": "249fb5365194e1fb5a067ec244eb9467686c54d3ed2887903dcf2ed84859b692"
+  }
+ },
+ "android": {
+  "qs": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-7.40.0.apk",
+   "sha256": "0ba5b2ce420a95d52a4325f8d83ee549f007d43f796b812f41784513d3c0c671"
+  },
+  "clean": {
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.0/QS-Deals-Clean-7.40.0.apk",
+   "sha256": "94d3a210854994020eb486576e82a63c6d77e26d5c5eb4c49ba7dc15ba1cd20c"
   }
  }
 }
