@@ -1,24 +1,24 @@
 {
- "version": "7.37.0",
- "notes": "New Skip Trace section under QBlast: look up one owner or a whole file in the background, beep when a human check is needed, add results to Leads or Buyers, Excel template.",
+ "version": "7.38.0",
+ "notes": "Skip Trace rebuilt on your CBC Skip Tracer rules: one search box (address, name + address, or phone), address search first, confident matches only, 20/30/40 s timers with rest breaks, live US-connection check, beep on human check.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-Setup-7.37.0.exe",
-   "sha256": "3482306ec2a11584ada6063cc54b5a0d2b4d3f847117b7d9c03c05b2a4fc477f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-Setup-7.38.0.exe",
+   "sha256": "ec617845a73e8d1e982a0484a5e82991458fc1d51dd4e31677b3fdea95c6ccf5"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-Clean-Setup-7.37.0.exe",
-   "sha256": "63be4eb5060e8496dcc3174cc38019ff946131bc1ed74be95bad70e2c07667a3"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-Clean-Setup-7.38.0.exe",
+   "sha256": "9a961ea00f1cde30e71873ddc5cf7539b1b637c7f235e44dcb6e3f4580cf2f24"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-7.37.0.apk",
-   "sha256": "7b6e02adab8df364794f6bd792a016959714be99d9a188b8d5eddd854f48ec95"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-7.38.0.apk",
+   "sha256": "634d007ff9a214239d8c39542c7368f901e0f07fa3f61e4170a5fc02c092e9ab"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-Clean-7.37.0.apk",
-   "sha256": "b9915eeeadf2030337075527189c2bd9696dba7f51faa4c2e8d61cf4271ec52f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-Clean-7.38.0.apk",
+   "sha256": "d241b37af2a48cfcf196c5878017a66080eaef668b063152656aae578e38a97f"
   }
  }
 }
