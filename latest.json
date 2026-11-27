@@ -1,24 +1,24 @@
 {
- "version": "7.36.1",
- "notes": "Buyers \u203a Public Records: add one buyer by hand (+ Add one), not only by file.",
+ "version": "7.37.0",
+ "notes": "New Skip Trace section under QBlast: look up one owner or a whole file in the background, beep when a human check is needed, add results to Leads or Buyers, Excel template.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-Setup-7.36.1.exe",
-   "sha256": "0adee7350f8e2507c861427a6cac9340553b4bad74e5718e6acbbb543fcc7889"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-Setup-7.37.0.exe",
+   "sha256": "3482306ec2a11584ada6063cc54b5a0d2b4d3f847117b7d9c03c05b2a4fc477f"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-Clean-Setup-7.36.1.exe",
-   "sha256": "76c65e644b070f3fb7cde482c0e6214923121e9229ffcd35d70a9cddfb497559"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-Clean-Setup-7.37.0.exe",
+   "sha256": "63be4eb5060e8496dcc3174cc38019ff946131bc1ed74be95bad70e2c07667a3"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-7.36.1.apk",
-   "sha256": "d38e1cb375ac8a93376c4b7486e3f29a95bf1fa272c942451dd44c5294827465"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-7.37.0.apk",
+   "sha256": "7b6e02adab8df364794f6bd792a016959714be99d9a188b8d5eddd854f48ec95"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.1/QS-Deals-Clean-7.36.1.apk",
-   "sha256": "0473e86abbc4b76b49c0619b6230126ccefafb412acd842afc6a3e47f8a81112"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.37.0/QS-Deals-Clean-7.37.0.apk",
+   "sha256": "b9915eeeadf2030337075527189c2bd9696dba7f51faa4c2e8d61cf4271ec52f"
   }
  }
 }
