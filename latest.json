@@ -1,24 +1,24 @@
 {
- "version": "7.33.2",
- "notes": "Map fixed: Esri street map tiles (no key needed). Zillow links in Leads open inside the app browser.",
+ "version": "7.34.0",
+ "notes": "New: QBlast texting under Leads. Text homeowners from your Telnyx numbers: campaigns with cost before sending, one inbox for all replies, STOP opt-outs, numbers, templates, wallet, analytics and 10DLC. Set it up once on the Windows app (free Cloudflare server).",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-Setup-7.33.2.exe",
-   "sha256": "5bba7c56ecac7d5f8489b527896ee1964fecd001ea0832de27c85090f272a680"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-Setup-7.34.0.exe",
+   "sha256": "09af64146dcb2ac3717138b52be3ebe219878b4c18a17f81e546875d0ce280a2"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-Clean-Setup-7.33.2.exe",
-   "sha256": "cd3b3f21c5caa74666bf6ffb04d3d478dd9ef2b49ffa1ed031d764c524709de8"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-Clean-Setup-7.34.0.exe",
+   "sha256": "38d80a75fc892d6409de7337f5a1a14502a264b1664a0e1265be70664d098227"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-7.33.2.apk",
-   "sha256": "672c78c6f16e4cc810ebdbcb929f77f57536a2c7f449e178ca763d409bd8f6a4"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-7.34.0.apk",
+   "sha256": "0252fe82fee625dd357c3f876061900d12213d4fc58aa16533970984fd2332a6"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.33.2/QS-Deals-Clean-7.33.2.apk",
-   "sha256": "64ce94c535f4e3d4c9b6364815451b0415aeb7b5e1f7eb1e087594a5a44ec668"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-Clean-7.34.0.apk",
+   "sha256": "5e0dca2abe326c83ca8cce1ebef886d3b822f573af78b3873740fdc44906bec6"
   }
  }
 }
