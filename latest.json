@@ -1,24 +1,24 @@
 {
- "version": "7.35.2",
- "notes": "Update alerts now show as a Windows or phone notification, even when QS Deals is closed. Checks every 15 minutes.",
+ "version": "7.36.0",
+ "notes": "One-tap skip trace: leads with no phone get a Find phones button. It looks the owner up in the background and saves the numbers. Turn on Tuxler VPN (US) first.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-Setup-7.35.2.exe",
-   "sha256": "a7d7aed40fb1a8ba7f287bb6d677521ef514275b7a3c938c975f197373d1786f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-Setup-7.36.0.exe",
+   "sha256": "a1b1268be04a48d8928da8141a7737010f0919b436719f5d0b3568dbac552274"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-Clean-Setup-7.35.2.exe",
-   "sha256": "ef6632f4f4be419e91991bda4429acda07332accfe02d2bbb1314ac628445308"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-Clean-Setup-7.36.0.exe",
+   "sha256": "50b819eb8f18a7e5b85fac1c18b9da706d2e0847c749946fab9707bb2505b34b"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-7.35.2.apk",
-   "sha256": "5955c75710fe96a2c84daaf7652775d465a6a69f17632d89d5ec286589240b99"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-7.36.0.apk",
+   "sha256": "1df3c486fccd5da509b9158aa26b585a97f79293723b6a95e3a641ef0f461c0a"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-Clean-7.35.2.apk",
-   "sha256": "30bb35006cda72b72ace84bd22a349a36657cdfe0ce55165eca177a904f76743"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.36.0/QS-Deals-Clean-7.36.0.apk",
+   "sha256": "9bd07176c760076c77de5cba8054835f03d194166566f25a4989331807ba38b2"
   }
  }
 }
