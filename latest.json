@@ -1,24 +1,14 @@
 {
- "version": "7.38.0",
- "notes": "Skip Trace rebuilt on your CBC Skip Tracer rules: one search box (address, name + address, or phone), address search first, confident matches only, 20/30/40 s timers with rest breaks, live US-connection check, beep on human check.",
+ "version": "7.39.0",
+ "notes": "QConnect: skip trace now runs in a real Google Chrome hidden in the background with Tuxler VPN (Skip Trace \u203a QConnect to set it up). Human check only opens when you press Open the check, then continues by itself. Waits and continues if the VPN drops, restarts the browser if it closes, resumes after a restart. Separate name and address boxes, CSV template, row order setting.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-Setup-7.38.0.exe",
-   "sha256": "ec617845a73e8d1e982a0484a5e82991458fc1d51dd4e31677b3fdea95c6ccf5"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.0/QS-Deals-Setup-7.39.0.exe",
+   "sha256": "3d03a990de047a9870e4c535f5b1502a09bbf08b83ef2844a60e91db312f3eb5"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-Clean-Setup-7.38.0.exe",
-   "sha256": "9a961ea00f1cde30e71873ddc5cf7539b1b637c7f235e44dcb6e3f4580cf2f24"
-  }
- },
- "android": {
-  "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-7.38.0.apk",
-   "sha256": "634d007ff9a214239d8c39542c7368f901e0f07fa3f61e4170a5fc02c092e9ab"
-  },
-  "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.38.0/QS-Deals-Clean-7.38.0.apk",
-   "sha256": "d241b37af2a48cfcf196c5878017a66080eaef668b063152656aae578e38a97f"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.0/QS-Deals-Clean-Setup-7.39.0.exe",
+   "sha256": "b59a700869c65922476ddc05be619a3a978fe7c341d4fe0a01633d022378537a"
   }
  }
 }

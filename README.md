@@ -2,14 +2,14 @@
 
 The QS Deals apps check `latest.json` here for new versions.
 
-Current version: **7.38.0** (Windows and Android)
+Current version: **7.39.0** (Windows). Android stays on 7.38.0.
 
-- Windows (QS Capital): `v7.38.0/QS-Deals-Setup-7.38.0.exe`
-- Windows (customers): `v7.38.0/QS-Deals-Clean-Setup-7.38.0.exe`
+- Windows (QS Capital): `v7.39.0/QS-Deals-Setup-7.39.0.exe`
+- Windows (customers): `v7.39.0/QS-Deals-Clean-Setup-7.39.0.exe`
 - Android (QS Capital): `v7.38.0/QS-Deals-7.38.0.apk`
 - Android (customers): `v7.38.0/QS-Deals-Clean-7.38.0.apk`
 
-What's new in 7.38.0: Map fixed: Esri street map tiles (no key needed). Zillow links in Leads open inside the app browser.
+What's new in 7.39.0 (Windows): QConnect skip trace in a hidden real Chrome with Tuxler VPN; manual human check; auto-resume.
 
 New accounts add a card for a 7-day free trial, then $29/month.
 
