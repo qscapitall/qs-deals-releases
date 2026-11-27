@@ -1,14 +1,14 @@
 {
- "version": "7.39.2",
- "notes": "Skip trace: each search now opens as a normal page in the QConnect browser (fixes \"site asked to slow down\"). The app no longer touches the check page while you do the human check.",
+ "version": "7.39.3",
+ "notes": "Skip trace: checks the VPN address before every search, logs it, and tells you when a repeated human check is caused by Tuxler changing your address.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.2/QS-Deals-Setup-7.39.2.exe",
-   "sha256": "5145ce17d15f8e9d91b2c92f18239edb375836f21444d8d24a9f8e1dcb739cb0"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.3/QS-Deals-Setup-7.39.3.exe",
+   "sha256": "57084cc5fb23d2aa0088373ec1bd3e71e5fa5042058c21061d0aa98404b0f772"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.2/QS-Deals-Clean-Setup-7.39.2.exe",
-   "sha256": "9f63a097b3586300eae77988bad3efc06202b4a0b0546bca093d382bcc3dec28"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.3/QS-Deals-Clean-Setup-7.39.3.exe",
+   "sha256": "f19e09fb9beb76c89e0746a670cde30399850593b76d35e9967b0cde491f32d4"
   }
  }
 }
