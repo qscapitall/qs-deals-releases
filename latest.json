@@ -1,24 +1,24 @@
 {
- "version": "7.35.1",
- "notes": "New icons for Seller Finance, Takeover and Hybrid.",
+ "version": "7.35.2",
+ "notes": "Update alerts now show as a Windows or phone notification, even when QS Deals is closed. Checks every 15 minutes.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-Setup-7.35.1.exe",
-   "sha256": "bde5d9294d1a4a79132a8e3bca762ef92066982de55475c5127ac4c1d677af51"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-Setup-7.35.2.exe",
+   "sha256": "a7d7aed40fb1a8ba7f287bb6d677521ef514275b7a3c938c975f197373d1786f"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-Clean-Setup-7.35.1.exe",
-   "sha256": "310185e44246c1106c7c1408bdfa4bc58c15c36459fa3fced4d0f4891fd0c382"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-Clean-Setup-7.35.2.exe",
+   "sha256": "ef6632f4f4be419e91991bda4429acda07332accfe02d2bbb1314ac628445308"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-7.35.1.apk",
-   "sha256": "826afa717107b43539ccbaf41b25ffe00c8f95ae498dbef2dc4ba06056548e0d"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-7.35.2.apk",
+   "sha256": "5955c75710fe96a2c84daaf7652775d465a6a69f17632d89d5ec286589240b99"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-Clean-7.35.1.apk",
-   "sha256": "c9834ff840ff3fffb77c2a7b0beaa715365ac297af82185330dab6805af5e8b3"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.2/QS-Deals-Clean-7.35.2.apk",
+   "sha256": "30bb35006cda72b72ace84bd22a349a36657cdfe0ce55165eca177a904f76743"
   }
  }
 }
