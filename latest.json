@@ -1,24 +1,24 @@
 {
- "version": "7.40.1",
- "notes": "Skip trace searches run in the background again (like the CBC Skip Tracer extension): results are loaded behind the scenes and the site tab no longer opens each person's page. A page only opens when a human check is needed.",
+ "version": "7.40.2",
+ "notes": "Skip trace search is back to separate cells (owner name, phone, street, city, state, ZIP). The QConnect browser stays on screen until you tap Hide, and stays hidden until you tap Show.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-Setup-7.40.1.exe",
-   "sha256": "c7313a7514db6931dac0cc07adb643fe5b01c3d54247ffb90fa4204850710754"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-Setup-7.40.2.exe",
+   "sha256": "64aa39fc16e62c09070cf0cc3c6a75d48b79301c074b9e3177e5d6abd932c842"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-Clean-Setup-7.40.1.exe",
-   "sha256": "20045b2d23b48dab007e0492a0afc3a64460d8a7671135732d60ea694f1d9ac5"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-Clean-Setup-7.40.2.exe",
+   "sha256": "36f73a1f2a19ffce18be755b46044a9de1b69f0935f396d35453ee5c4e3a3409"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-7.40.1.apk",
-   "sha256": "f086e7f12173997eb1502ed1627a9950c556360c99950fca60f6f06f350dd67c"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-7.40.2.apk",
+   "sha256": "b579c36b979aa55d26b2748da00f636cf2ea69481197ef31a7a7fb6f90b333b2"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.1/QS-Deals-Clean-7.40.1.apk",
-   "sha256": "43a1fbf4df51f9368ccc4b0f8d2f7279c7a94f3ebe26b068ec082151bb6f8f82"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-Clean-7.40.2.apk",
+   "sha256": "6585eb1f05113da240565fa5b546b10caa1f16d01361250c077bd7548f1984c4"
   }
  }
 }
