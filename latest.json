@@ -1,24 +1,24 @@
 {
- "version": "7.34.0",
- "notes": "New: QBlast texting under Leads. Text homeowners from your Telnyx numbers: campaigns with cost before sending, one inbox for all replies, STOP opt-outs, numbers, templates, wallet, analytics and 10DLC. Set it up once on the Windows app (free Cloudflare server).",
+ "version": "7.35.0",
+ "notes": "QBlast preview without keys, texts-you-can-send and top-up calculator, add money with your saved card, notifications even when the app is closed (texts, team changes, deals, updates), tray on PC, updates install inside the Android app.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-Setup-7.34.0.exe",
-   "sha256": "09af64146dcb2ac3717138b52be3ebe219878b4c18a17f81e546875d0ce280a2"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-Setup-7.35.0.exe",
+   "sha256": "ac49bf194cb16be68fae0afa71791564e46995c57d94de19e90c044cd978b0f8"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-Clean-Setup-7.34.0.exe",
-   "sha256": "38d80a75fc892d6409de7337f5a1a14502a264b1664a0e1265be70664d098227"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-Clean-Setup-7.35.0.exe",
+   "sha256": "f1d5898842b4eacbb15e30751828403d4204cd738cf52ef33c08d7515bf8d599"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-7.34.0.apk",
-   "sha256": "0252fe82fee625dd357c3f876061900d12213d4fc58aa16533970984fd2332a6"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-7.35.0.apk",
+   "sha256": "8526a2ca7927d6afc1c8625df5a97107d9658d6051c722382c4462c06af8679e"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.34.0/QS-Deals-Clean-7.34.0.apk",
-   "sha256": "5e0dca2abe326c83ca8cce1ebef886d3b822f573af78b3873740fdc44906bec6"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-Clean-7.35.0.apk",
+   "sha256": "e8f30f86eea4c1751c56d59ce61421866f36d1be708ca3a521faa667423c0866"
   }
  }
 }
