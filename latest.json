@@ -1,24 +1,24 @@
 {
- "version": "7.35.0",
- "notes": "QBlast preview without keys, texts-you-can-send and top-up calculator, add money with your saved card, notifications even when the app is closed (texts, team changes, deals, updates), tray on PC, updates install inside the Android app.",
+ "version": "7.35.1",
+ "notes": "New icons for Seller Finance, Takeover and Hybrid.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-Setup-7.35.0.exe",
-   "sha256": "ac49bf194cb16be68fae0afa71791564e46995c57d94de19e90c044cd978b0f8"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-Setup-7.35.1.exe",
+   "sha256": "bde5d9294d1a4a79132a8e3bca762ef92066982de55475c5127ac4c1d677af51"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-Clean-Setup-7.35.0.exe",
-   "sha256": "f1d5898842b4eacbb15e30751828403d4204cd738cf52ef33c08d7515bf8d599"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-Clean-Setup-7.35.1.exe",
+   "sha256": "310185e44246c1106c7c1408bdfa4bc58c15c36459fa3fced4d0f4891fd0c382"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-7.35.0.apk",
-   "sha256": "8526a2ca7927d6afc1c8625df5a97107d9658d6051c722382c4462c06af8679e"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-7.35.1.apk",
+   "sha256": "826afa717107b43539ccbaf41b25ffe00c8f95ae498dbef2dc4ba06056548e0d"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.0/QS-Deals-Clean-7.35.0.apk",
-   "sha256": "e8f30f86eea4c1751c56d59ce61421866f36d1be708ca3a521faa667423c0866"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.35.1/QS-Deals-Clean-7.35.1.apk",
+   "sha256": "c9834ff840ff3fffb77c2a7b0beaa715365ac297af82185330dab6805af5e8b3"
   }
  }
 }
