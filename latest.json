@@ -1,14 +1,14 @@
 {
- "version": "7.39.1",
- "notes": "Skip trace: the site's \"Checking your browser\" page is now shown as a human check (Open the check) instead of \"site asked to slow down\". QConnect: skip trace now runs in a real Google Chrome hidden in the background with Tuxler VPN (Skip Trace \u203a QConnect to set it up). Human check only opens when you press Open the check, then continues by itself. Waits and continues if the VPN drops, restarts the browser if it closes, resumes after a restart. Separate name and address boxes, CSV template, row order setting.",
+ "version": "7.39.2",
+ "notes": "Skip trace: each search now opens as a normal page in the QConnect browser (fixes \"site asked to slow down\"). The app no longer touches the check page while you do the human check.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.1/QS-Deals-Setup-7.39.1.exe",
-   "sha256": "e5d338f2524ed7ac7f0b0567d752384687db59b78c3a0f40e447d6871f4e1478"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.2/QS-Deals-Setup-7.39.2.exe",
+   "sha256": "5145ce17d15f8e9d91b2c92f18239edb375836f21444d8d24a9f8e1dcb739cb0"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.1/QS-Deals-Clean-Setup-7.39.1.exe",
-   "sha256": "9b4a29dfb43a393633f91e4188c320afc6e16667ca8a0e983ba80dbefa9c9c11"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.39.2/QS-Deals-Clean-Setup-7.39.2.exe",
+   "sha256": "9f63a097b3586300eae77988bad3efc06202b4a0b0546bca093d382bcc3dec28"
   }
  }
 }
