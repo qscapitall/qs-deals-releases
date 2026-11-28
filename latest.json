@@ -1,24 +1,24 @@
 {
- "version": "7.40.2",
- "notes": "Skip trace search is back to separate cells (owner name, phone, street, city, state, ZIP). The QConnect browser stays on screen until you tap Hide, and stays hidden until you tap Show.",
+ "version": "7.41.0",
+ "notes": "Skip trace: upload many files at once and set their order; the next file starts by itself when one finishes, and every finished file keeps its results. Search by Address (owner name optional: shown first as Best match if they live there) or by Phone. Example addresses and phones are now fake placeholders. Smoother animations.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-Setup-7.40.2.exe",
-   "sha256": "64aa39fc16e62c09070cf0cc3c6a75d48b79301c074b9e3177e5d6abd932c842"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.0/QS-Deals-Setup-7.41.0.exe",
+   "sha256": "b4ff728badf60be83c432e9824d129da43f88422b34b222f30f015a2da08b8a9"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-Clean-Setup-7.40.2.exe",
-   "sha256": "36f73a1f2a19ffce18be755b46044a9de1b69f0935f396d35453ee5c4e3a3409"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.0/QS-Deals-Clean-Setup-7.41.0.exe",
+   "sha256": "240de997ed16733de01ef33cab7bcc3131ac9d3646b865bd71ddff79caf15198"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-7.40.2.apk",
-   "sha256": "b579c36b979aa55d26b2748da00f636cf2ea69481197ef31a7a7fb6f90b333b2"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.0/QS-Deals-7.41.0.apk",
+   "sha256": "7f684135a91baa821d65b344ab6957711ca83f153532fcf5b7368742a3cd0e4d"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.40.2/QS-Deals-Clean-7.40.2.apk",
-   "sha256": "6585eb1f05113da240565fa5b546b10caa1f16d01361250c077bd7548f1984c4"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.0/QS-Deals-Clean-7.41.0.apk",
+   "sha256": "15ced6fcbedf61fca1a3350336720ded3a117b61c737954349eae134c36e490f"
   }
  }
 }
