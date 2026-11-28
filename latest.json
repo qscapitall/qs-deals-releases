@@ -1,24 +1,24 @@
 {
- "version": "7.41.1",
- "notes": "Skip trace: finished files now appear under Up next with a check mark and a Download button. New Cancel file button stops the current file right away (phones found so far are kept) and moves on to the next file.",
+ "version": "7.42.0",
+ "notes": "Skip trace: every file has its own controls: pause/resume, put on hold, run now, cancel, move up/down. Paused files keep their progress. Address search is one full-address cell plus an optional owner name. UI fixes.",
  "win": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.1/QS-Deals-Setup-7.41.1.exe",
-   "sha256": "205f01ccae75f786dd6b418e04acf917f1be30a9f58d54a3571ec9945b341589"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.42.0/QS-Deals-Setup-7.42.0.exe",
+   "sha256": "ed742b599c8598587d5d1c79534d23b8ba7d0de9e64ffcfc84ddbe29ee730a5f"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.1/QS-Deals-Clean-Setup-7.41.1.exe",
-   "sha256": "dc401b4a9c7398464ebe93a6fb2289bfc73340f6bca8785bd31e350ce71b5c77"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.42.0/QS-Deals-Clean-Setup-7.42.0.exe",
+   "sha256": "e753bb6bc7cef324dd1e3e35d67e67ef5be75e4eb24b22d5a7723513613ef396"
   }
  },
  "android": {
   "qs": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.1/QS-Deals-7.41.1.apk",
-   "sha256": "ac65577c1d4e8ebfcc390d34a6ccee636c03257fa15671d648b1ac0bc96de788"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.42.0/QS-Deals-7.42.0.apk",
+   "sha256": "1930381711e5b020727feb2973e72095fb0c01461d9a87a7165d1d0db362684a"
   },
   "clean": {
-   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.41.1/QS-Deals-Clean-7.41.1.apk",
-   "sha256": "d5ee08de05ea99999d279b7c9561fa2d46aea260aad9a21b7fe2140f5af97a35"
+   "url": "https://raw.githubusercontent.com/qscapitall/qs-deals-releases/main/v7.42.0/QS-Deals-Clean-7.42.0.apk",
+   "sha256": "2f8b33c90480cd2809836032fb2ff612d3345ee7bedce6b4e40f8160290efbb6"
   }
  }
 }
